@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@300&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+ul{
+    list-style-type: none;
+}
+h1{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+h2{
+    text-align: center;
+    color: white;
+}
+.populares{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 10% 25% 283px 283px 25% 10%;
+    grid-template-rows: 100px 283px 283px 50px ;
+    grid-template-areas:"a c c c c b" "a h d e l b" "a h j k l b ";  
+}
+.productospopulares{
+    grid-area:c;
+}
+.productospopulares1{
+    grid-area:d;
+}
+.productospopulares2{
+    grid-area:e;
+}
+.productospopulares3{
+    grid-area:j;
+}
+.productospopulares4{
+    grid-area:k;
+}
+h3{
+    color: white;
+
+}
+p{
+    color: white;
+}
+.nav{
+    margin: 0px;
+    text-align: right;
+
+}
+.divtoplogo{
+    display: flex;
+    align-items: center;
+}
+.ultop{
+    height: 100%;
+    display:flex;
+    flex-direction: row;
+    justify-content: right;
+    align-items: flex-end;
+    margin: 0px;
+    padding: 0px;
+
+}
+.atop1{
+    display: flex;
+    width: 60px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.atop2{
+    display: flex;
+    width: 70px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.atop3{
+    display: flex;
+    width: 110px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.atop4{
+    display: flex;
+    width: 60px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.atop5{
+    display: flex;
+    width: 150px;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+li{
+    color: white;
+    width: auto;
+    margin:0px;
+}
+
+main{
+    background-color: blue;
+}
+header{
+    background-color: black;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 150px;
+
+}
+.ulbottom{
+    display: inline-block;
+    height: 100%;
+}
+h4{
+    color: white;
+}
+.navbottom{
+    text-align: right;
+}
+.divbottom{
+    text-align: center;
+}
+.divtop{
+    height: 190px;
+}
+.logo{
+    width: 210px;
+}
+.divbottomlogo{
+    display: flex;
+    align-items: center;  
+}
+.pindex{
+    margin-left: 40%;
+    margin-right: 40%;
+    color: white;
+}
+.articlesobrenosotros{
+    display: flex;
+    height: 550px;
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    margin-right: 25%;
+
+}
+.psobrenosotros{
+    width: 500px;
+    font-family: 'Ubuntu', sans-serif;
+}
+.sectionproductos{
+    display:grid;
+    grid-template-areas:"a c c c c b" "a d e f g b" "a h i j k b ";  
+    grid-template-columns: 11% 19% 19% 19% 19% 11%;
+    grid-template-rows: 150px 283px 283px 100px;
+    align-items: center;
+                  
+}
+.productosimg{
+    grid-area:c;
+}
+.imgproductos1{
+    grid-area:d;
+}
+.imgproductos2{
+    grid-area:e; 
+}
+.imgproductos3{
+    grid-area:f;
+}
+.imgproductos4{
+    grid-area:g; 
+}
+.imgproductos5{
+    grid-area:h;
+}
+.imgproductos6{
+    grid-area:i;
+}
+.imgproductos7{
+    grid-area:j;
+}
+.imgproductos8{
+    grid-area:k;
+}
+h3{
+    font-family: 'Ubuntu', sans-serif;
+}
+.formcontacto{
+    width: 300px;
+}
+input{
+    width: 300px;
+    margin: 2px;
+
+}
+.articlecontacto{
+    margin: 400px;
+    display: inline-block;
+    text-align: center;
+}
+.sectioncontacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.preguntasfrecuentes{
+    display: grid;
+   grid-template-columns: 100%; 
+   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   row-gap: 40px;
+   align-items: center;
+}
+.quienessomos{
+    display: grid;
+    grid-template-columns: 20% 283px 283px 283px 283px 20%;
+    grid-template-areas:"a c c c c b" "a m d d l b" "a e f g h b ";  
+    grid-template-rows: 100px 150px 283px 50px;
+    align-items: center;
+}
+
+.quienessomos0{
+    grid-area: c;
+}
+.quienessomos1{
+    grid-area: d;
+}
+.quienessomos2{
+    grid-area: e;
+}
+.quienessomos3{
+    grid-area: f;
+}
+.quienessomos4{
+    grid-area: g;
+}
+.quienessomos5{
+    grid-area: h;
+}
+@media only screen and (max-width: 480px){
+    .divtoplogo{
+        width: 140px;
+    }
+    .logo{
+        width: 80px;
+    }
+    .quienessomos{
+        display: grid;
+        grid-template-columns: 40px 200px 200px 40px;
+        grid-template-areas:"a c c b" "a d d b" "a e f b " "a g h b";  
+        grid-template-rows: 100px 150px 200px 200px 50px;
+        align-items: center;
+    }
+    img{
+        width: 100%;
+    }
+    
+    .quienessomos0{
+        grid-area: c;
+    }
+    .quienessomos1{
+        grid-area: d;
+    }
+    .quienessomos2{
+        grid-area: e;
+        width: 200px;
+        height: 200px;
+    }
+    .quienessomos3{
+        grid-area: f;
+        width: 200px;
+        height: 200px;
+    }
+    .quienessomos4{
+        grid-area: g;
+        width: 200px;
+        height: 200px;
+    }
+    .quienessomos5{
+        grid-area: h;
+        width: 200px;
+        height: 200px;
+    }
+    .populares{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 98px 284px 98px;
+        grid-template-rows: 100px 283px 283px 283px 283px 50px;
+        grid-template-areas:"a c b" "a d b" "a e b " "a f b " "a g b ";  
+    }
+    .productospopulares{
+        grid-area:c;
+    }
+    .productospopulares1{
+        grid-area:d;
+    }
+    .productospopulares2{
+        grid-area:e;
+    }
+    .productospopulares3{
+        grid-area:f;
+    }
+    .productospopulares4{
+        grid-area:g;
+    }
+    .navbottom{
+        height: 140;
+    }
+    .atop1{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .atop2{
+        display: flex;
+        width: 60px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .atop3{
+        display: flex;
+        width: 80px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .atop4{
+        display: flex;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .atop5{
+        display: flex;
+        width: 90px;
+        height: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    .lisobrenosotros{
+        width: 60px;
+    }
+    .lipreguntasfrecuentes{
+        width: 70px;
+    }
+    .navbottom{
+        display: none;
+    }
+}
