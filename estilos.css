@@ -18,7 +18,7 @@ h2{
 .populares{
     display: grid;
     align-items: center;
-    grid-template-columns: 10% 25% 283px 283px 25% 10%;
+    grid-template-columns: 2fr 25% 283px 283px 25% 2fr;
     grid-template-rows: 100px 283px 283px 50px ;
     grid-template-areas:"a c c c c b" "a h d e l b" "a h j k l b ";  
 }
@@ -169,8 +169,8 @@ h4{
 .sectionproductos{
     display:grid;
     grid-template-areas:"a c c c c b" "a d e f g b" "a h i j k b ";  
-    grid-template-columns: 11% 19% 19% 19% 19% 11%;
-    grid-template-rows: 150px 283px 283px 100px;
+    grid-template-columns: 1fr 283px 283px 283px 283px 1fr;
+    grid-template-rows: 150px 283px 283px 150px;
     align-items: center;
                   
 }
@@ -231,7 +231,7 @@ input{
 }
 .quienessomos{
     display: grid;
-    grid-template-columns: 20% 283px 283px 283px 283px 20%;
+    grid-template-columns: 2fr 283px 283px 283px 283px 2fr;
     grid-template-areas:"a c c c c b" "a m d d l b" "a e f g h b ";  
     grid-template-rows: 100px 150px 283px 50px;
     align-items: center;
@@ -373,6 +373,41 @@ input{
     .navbottom{
         display: none;
     }
+    .sectionproductos{
+        display:grid;
+        grid-template-areas:"a c c c b" "a d m e b""a f m g b" "a h m i b""a j m k b ";  
+        grid-template-columns: 1fr 283px 100px 283px 1fr;
+        grid-template-rows: 150px 283px 283px 283px 283px 100px;
+        align-items: center;
+                      
+    }
+    .productosimg{
+        grid-area:c;
+    }
+    .imgproductos1{
+        grid-area:d;
+    }
+    .imgproductos2{
+        grid-area:e; 
+    }
+    .imgproductos3{
+        grid-area:f;
+    }
+    .imgproductos4{
+        grid-area:g; 
+    }
+    .imgproductos5{
+        grid-area:h;
+    }
+    .imgproductos6{
+        grid-area:i;
+    }
+    .imgproductos7{
+        grid-area:j;
+    }
+    .imgproductos8{
+        grid-area:k;
+    }
 }
 /* celular en horizontal y tablet en vertical */
 @media only screen and (max-width: 950px)
@@ -423,8 +458,6 @@ input{
     }
     .productospopulares{
         grid-area:c;
-        width: 283px;
-        height: 283px;
     }
     .productospopulares1{
         grid-area:d;
@@ -492,6 +525,41 @@ input{
     }
     .navbottom{
         display: none;
+    }
+    .sectionproductos{
+        display:grid;
+        grid-template-areas:"a c c b" "a d e b" "a f g b" "a h i b" " a j k b ";  
+        grid-template-columns: 1fr 283px 283px 1fr;
+        grid-template-rows: 150px 283px 283px 283px 283px 100px;
+        align-items: center;
+                      
+    }
+    .productosimg{
+        grid-area:c;
+    }
+    .imgproductos1{
+        grid-area:d;
+    }
+    .imgproductos2{
+        grid-area:e; 
+    }
+    .imgproductos3{
+        grid-area:f;
+    }
+    .imgproductos4{
+        grid-area:g; 
+    }
+    .imgproductos5{
+        grid-area:h;
+    }
+    .imgproductos6{
+        grid-area:i;
+    }
+    .imgproductos7{
+        grid-area:j;
+    }
+    .imgproductos8{
+        grid-area:k;
     }
 }
 /* este es el media para la pantalla de celular use 600px */
@@ -620,7 +688,7 @@ input{
         display:grid;
         grid-template-areas:"a c c b" "a d e b" "a f g b" "a h i b" " a j k b ";  
         grid-template-columns: 1fr 200px 200px 1fr;
-        grid-template-rows: 150px 180px 180px 180px 180px 100px;
+        grid-template-rows: 150px 200px 200px 200px 200px 100px;
         align-items: center;
                       
     }
@@ -683,9 +751,9 @@ input{
     }
     .quienessomos{
         display: grid;
-        grid-template-columns: 1fr 180px 180px 1fr;
+        grid-template-columns: 1fr 170px 170px 1fr;
         grid-template-areas:"a c c b" "a d d b" "a e f b" "a g h b";  
-        grid-template-rows: 100px 150px 180px 180px 50px;
+        grid-template-rows: 100px 150px 170px 170px 50px;
         align-items: center;
     }
     img{
@@ -700,23 +768,23 @@ input{
     }
     .quienessomos2{
         grid-area: e;
-        width: 180px;
-        height: 180px;
+        width: 170px;
+        height: 170px;
     }
     .quienessomos3{
         grid-area: f;
-        width: 180px;
-        height: 180px;
+        width: 170px;
+        height: 170px;
     }
     .quienessomos4{
         grid-area: g;
-        width: 180px;
-        height: 180px;
+        width: 170px;
+        height: 170px;
     }
     .quienessomos5{
         grid-area: h;
-        width: 180px;
-        height: 180px;
+        width: 170px;
+        height: 170px;
     }
     .populares{
         display: grid;
