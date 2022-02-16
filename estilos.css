@@ -233,9 +233,31 @@ input{
 .preguntasfrecuentes{
     display: grid;
    grid-template-columns: 100%; 
-   grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 100px 70px 70px 70px 70px 70px 70px 70px;
+   grid-template-areas: "a""b""c""d""e""f""g";
    row-gap: 40px;
    align-items: center;
+}
+.h1preguntasfrecuentes{
+    grid-area: a;
+}
+.preguntasfrecuentes1{
+    grid-area: b;
+}
+.preguntasfrecuentes2{
+    grid-area: c;
+}
+.preguntasfrecuentes3{
+    grid-area: d;
+}
+.preguntasfrecuentes4{
+    grid-area: e;
+}
+.preguntasfrecuentes5{
+    grid-area: f;
+}
+.preguntasfrecuentes6{
+    grid-area: g;
 }
 .quienessomos{
     display: grid;
@@ -460,6 +482,35 @@ input{
         width: 400px;
         margin: 2px;
     }
+    .preguntasfrecuentes{
+        display: grid;
+       grid-template-columns: 100%; 
+       grid-template-rows: 100px 70px 70px 70px 70px 70px 70px 70px;
+       grid-template-areas: "a""b""c""d""e""f""g";
+       row-gap: 25px;
+       align-items: center;
+    }
+    .h1preguntasfrecuentes{
+        grid-area: a;
+    }
+    .preguntasfrecuentes1{
+        grid-area: b;
+    }
+    .preguntasfrecuentes2{
+        grid-area: c;
+    }
+    .preguntasfrecuentes3{
+        grid-area: d;
+    }
+    .preguntasfrecuentes4{
+        grid-area: e;
+    }
+    .preguntasfrecuentes5{
+        grid-area: f;
+    }
+    .preguntasfrecuentes6{
+        grid-area: g;
+    }
 }
 /* celular en horizontal y tablet en vertical */
 @media only screen and (max-width: 950px)
@@ -658,6 +709,35 @@ input{
     input{
         width: 350px;
         margin: 2px;
+    }
+    .preguntasfrecuentes{
+        display: grid;
+       grid-template-columns: 100%; 
+       grid-template-rows: 100px 75px 75px 75px 75px 75px 75px 75px;
+       grid-template-areas: "a""b""c""d""e""f""g";
+       row-gap: 10px;
+       align-items: center;
+    }
+    .h1preguntasfrecuentes{
+        grid-area: a;
+    }
+    .preguntasfrecuentes1{
+        grid-area: b;
+    }
+    .preguntasfrecuentes2{
+        grid-area: c;
+    }
+    .preguntasfrecuentes3{
+        grid-area: d;
+    }
+    .preguntasfrecuentes4{
+        grid-area: e;
+    }
+    .preguntasfrecuentes5{
+        grid-area: f;
+    }
+    .preguntasfrecuentes6{
+        grid-area: g;
     }
 }
 /* este es el media para la pantalla de celular use 600px */
@@ -876,6 +956,35 @@ input{
     input{
         width: 350px;
         margin: 2px;
+    }
+    .preguntasfrecuentes{
+        display: grid;
+       grid-template-columns: 100%; 
+       grid-template-rows: 100px 80px 80px 80px 80px 80px 80px 80px;
+       grid-template-areas: "a""b""c""d""e""f""g";
+       row-gap: 0px;
+       align-items: center;
+    }
+    .h1preguntasfrecuentes{
+        grid-area: a;
+    }
+    .preguntasfrecuentes1{
+        grid-area: b;
+    }
+    .preguntasfrecuentes2{
+        grid-area: c;
+    }
+    .preguntasfrecuentes3{
+        grid-area: d;
+    }
+    .preguntasfrecuentes4{
+        grid-area: e;
+    }
+    .preguntasfrecuentes5{
+        grid-area: f;
+    }
+    .preguntasfrecuentes6{
+        grid-area: g;
     }
 }
 /* este es el media para los telefonos mas chiquitos menos de 420px */
@@ -1099,5 +1208,34 @@ input{
     input{
         width: 300px;
         margin: 2px;
+    }
+    .preguntasfrecuentes{
+        display: grid;
+       grid-template-columns: 100%; 
+       grid-template-rows: 100px 90px 90px 90px 90px 90px 90px 90px;
+       grid-template-areas: "a""b""c""d""e""f""g";
+       row-gap: 0px;
+       align-items: center;
+    }
+    .h1preguntasfrecuentes{
+        grid-area: a;
+    }
+    .preguntasfrecuentes1{
+        grid-area: b;
+    }
+    .preguntasfrecuentes2{
+        grid-area: c;
+    }
+    .preguntasfrecuentes3{
+        grid-area: d;
+    }
+    .preguntasfrecuentes4{
+        grid-area: e;
+    }
+    .preguntasfrecuentes5{
+        grid-area: f;
+    }
+    .preguntasfrecuentes6{
+        grid-area: g;
     }
 }
