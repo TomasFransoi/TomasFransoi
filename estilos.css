@@ -148,23 +148,30 @@ h4{
     display: flex;
     align-items: center;  
 }
-.pindex{
-    margin-left: 40%;
-    margin-right: 40%;
-    color: white;
+.sectionsobrenosotros{
+    display: grid;
+    grid-template-columns: 1fr 400px 400px 1fr ;
+    grid-template-rows: 100px 300px 300px 50px ;
+    grid-template-areas: "a c c b""a d e b""a f g b" ;
 }
-.articlesobrenosotros{
-    display: flex;
-    height: 550px;
-    width: 50%;
-    text-align: center;
-    margin-left: 25%;
-    margin-right: 25%;
-
+.h1sobrenosotros{
+    grid-area: c;
 }
-.psobrenosotros{
-    width: 500px;
+.psobrenosotros1{
     font-family: 'Ubuntu', sans-serif;
+    grid-area: d;
+}
+.psobrenosotros2{
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: f;
+}
+.psobrenosotros3{
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: e;
+}
+.psobrenosotros4{
+    font-family: 'Ubuntu', sans-serif;
+    grid-area: g;
 }
 .sectionproductos{
     display:grid;
@@ -204,23 +211,24 @@ h4{
 h3{
     font-family: 'Ubuntu', sans-serif;
 }
-.formcontacto{
-    width: 300px;
+.sectioncontacto{
+    display: grid;
+    grid-template-columns: 3fr 450px 3fr;
+    grid-template-rows: 500px 140px 500px ;
+    grid-template-areas: "a c b""a d b";
 }
-input{
-    width: 300px;
-    margin: 2px;
-
+.h1contacto{
+    grid-area: c;
+}
+.formcontacto{
+    width: 450px;
 }
 .articlecontacto{
-    margin: 400px;
-    display: inline-block;
-    text-align: center;
+    grid-area: d;
 }
-.sectioncontacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+input{
+    width: 450px;
+    margin: 2px;
 }
 .preguntasfrecuentes{
     display: grid;
@@ -408,6 +416,50 @@ input{
     .imgproductos8{
         grid-area:k;
     }
+    .sectionsobrenosotros{
+        display: grid;
+        grid-template-columns: 1fr 350px 350px 1fr ;
+        grid-template-rows: 150px 220px 200px 80px ;
+        grid-template-areas: "a c c b""a d e b""a f g b" ;
+    }
+    .h1sobrenosotros{
+        grid-area: c;
+    }
+    .psobrenosotros1{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: d;
+    }
+    .psobrenosotros2{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: f;
+    }
+    .psobrenosotros3{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: e;
+    }
+    .psobrenosotros4{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: g;
+    }
+    .sectioncontacto{
+        display: grid;
+        grid-template-columns: 2fr 400px 2fr;
+        grid-template-rows: 450px 140px 450px ;
+        grid-template-areas: "a c b""a d b";
+    }
+    .h1contacto{
+        grid-area: c;
+    }
+    .formcontacto{
+        width: 400px;
+    }
+    .articlecontacto{
+        grid-area: d;
+    }
+    input{
+        width: 400px;
+        margin: 2px;
+    }
 }
 /* celular en horizontal y tablet en vertical */
 @media only screen and (max-width: 950px)
@@ -560,6 +612,52 @@ input{
     }
     .imgproductos8{
         grid-area:k;
+    }
+    .sectionsobrenosotros{
+        display: grid;
+        grid-template-columns: 1fr 300px 300px 1fr ;
+        grid-template-rows: 150px 220px 200px 80px ;
+        grid-template-areas: "a c c b""a d e b""a f g b" ;
+        align-items: center;
+    }
+    .h1sobrenosotros{
+        grid-area: c;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    .psobrenosotros1{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: d;
+    }
+    .psobrenosotros2{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: f;
+    }
+    .psobrenosotros3{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: e;
+    }
+    .psobrenosotros4{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: g;
+    }
+    .sectioncontacto{
+        display: grid;
+        grid-template-columns: 2fr 350px 2fr;
+        grid-template-rows: 450px 140px 450px ;
+        grid-template-areas: "a c b""a d b";
+    }
+    .h1contacto{
+        grid-area: c;
+    }
+    .formcontacto{
+        width: 350px;
+    }
+    .articlecontacto{
+        grid-area: d;
+    }
+    input{
+        width: 350px;
+        margin: 2px;
     }
 }
 /* este es el media para la pantalla de celular use 600px */
@@ -734,6 +832,50 @@ input{
         grid-area:k;
         width: 200px;
         height: 200px;
+    }
+    .sectionsobrenosotros{
+        display: grid;
+        grid-template-columns: 1fr 300px 1fr ;
+        grid-template-rows: 100px 220px 100px 150px 200px 50px ;
+        grid-template-areas: "a c b""a d b""a e b""a f b""a g b" ;
+    }
+    .h1sobrenosotros{
+        grid-area: c;
+    }
+    .psobrenosotros1{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: d;
+    }
+    .psobrenosotros2{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: f;
+    }
+    .psobrenosotros3{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: e;
+    }
+    .psobrenosotros4{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: g;
+    }
+    .sectioncontacto{
+        display: grid;
+        grid-template-columns: 1fr 350px 1fr;
+        grid-template-rows: 450px 140px 450px ;
+        grid-template-areas: "a c b""a d b";
+    }
+    .h1contacto{
+        grid-area: c;
+    }
+    .formcontacto{
+        width: 350px;
+    }
+    .articlecontacto{
+        grid-area: d;
+    }
+    input{
+        width: 350px;
+        margin: 2px;
     }
 }
 /* este es el media para los telefonos mas chiquitos menos de 420px */
@@ -913,5 +1055,49 @@ input{
         grid-area:k;
         width: 180px;
         height: 180px;
+    }
+    .sectionsobrenosotros{
+        display: grid;
+        grid-template-columns: 1fr 300px 1fr ;
+        grid-template-rows: 100px 220px 100px 150px 200px 50px ;
+        grid-template-areas: "a c b""a d b""a e b""a f b""a g b" ;
+    }
+    .h1sobrenosotros{
+        grid-area: c;
+    }
+    .psobrenosotros1{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: d;
+    }
+    .psobrenosotros2{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: f;
+    }
+    .psobrenosotros3{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: e;
+    }
+    .psobrenosotros4{
+        font-family: 'Ubuntu', sans-serif;
+        grid-area: g;
+    }
+    .sectioncontacto{
+        display: grid;
+        grid-template-columns: 1fr 300px 1fr;
+        grid-template-rows: 400px 140px 400px ;
+        grid-template-areas: "a c b""a d b";
+    }
+    .h1contacto{
+        grid-area: c;
+    }
+    .formcontacto{
+        width: 300px;
+    }
+    .articlecontacto{
+        grid-area: d;
+    }
+    input{
+        width: 300px;
+        margin: 2px;
     }
 }
