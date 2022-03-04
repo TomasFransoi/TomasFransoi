@@ -161,7 +161,7 @@ h4 {
 .sectionproductos {
     display: grid;
     grid-template-areas: "a c c c c b""a d e f g b""a h i j k b ";
-    grid-template-columns: 1fr 1fr 283px 283px 1fr 1fr;
+    grid-template-columns: 1fr 283px 283px 283px 283px 1fr;
     grid-template-rows: 150px 283px 283px 150px;
     align-items: center;
     .productosimg {
