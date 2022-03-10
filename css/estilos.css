@@ -88,8 +88,9 @@ h4 {
 
 .sectionsobrenosotros {
   display: grid;
+  align-items: center;
   grid-template-columns: 1fr 400px 400px 1fr;
-  grid-template-rows: 100px 300px 300px 50px;
+  grid-template-rows: 50px 300px 300px 50px;
   grid-template-areas: "a c c b" "a d e b" "a f g b"; }
   .sectionsobrenosotros .h1sobrenosotros {
     grid-area: c; }
@@ -108,12 +109,13 @@ h4 {
 
 .sectionproductos {
   display: grid;
-  grid-template-areas: "a c c c c b" "a d e f g b" "a h i j k b ";
+  align-items: center;
   grid-template-columns: 1fr 283px 283px 283px 283px 1fr;
-  grid-template-rows: 150px 283px 283px 150px;
-  align-items: center; }
+  grid-template-rows: 80px 283px 283px 150px;
+  grid-template-areas: "a c c c c b" "a d e f g b" "a h i j k b "; }
   .sectionproductos .productosimg {
-    grid-area: c; }
+    grid-area: c;
+    padding-bottom: 20px; }
   .sectionproductos .imgproductos1 {
     grid-area: d; }
   .sectionproductos .imgproductos2 {
@@ -136,6 +138,7 @@ h3 {
 
 .sectioncontacto {
   display: grid;
+  align-items: baseline;
   grid-template-columns: 3fr 450px 3fr;
   grid-template-rows: 500px 140px 500px;
   grid-template-areas: "a c b" "a d b"; }
@@ -147,20 +150,22 @@ h3 {
     width: 100%;
     margin: 2px; }
 
-.preguntasfrecuentes {
+.PreguntasExtend, .preguntasfrecuentes {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100px 70px 70px 70px 70px 70px 70px 70px;
-  grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-  row-gap: 40px;
-  align-items: center; }
+  align-items: center;
+  grid-template-areas: "a" "b" "c" "d" "e" "f" "g"; }
+
+.preguntasfrecuentes {
+  grid-template-rows: 60px 70px 70px 70px 70px 70px 70px 70px;
+  row-gap: 40px; }
 
 .quienessomos {
   display: grid;
+  align-items: center;
   grid-template-columns: 2fr 283px 283px 283px 283px 2fr;
-  grid-template-areas: "a c c c c b" "a m d d l b" "a e f g h b ";
   grid-template-rows: 100px 150px 283px 50px;
-  align-items: center; }
+  grid-template-areas: "a c c c c b" "a m d d l b" "a e f g h b "; }
   .quienessomos .quienessomos0 {
     grid-area: c; }
   .quienessomos .quienessomos1 {
@@ -178,10 +183,10 @@ h3 {
 @media only screen and (max-width: 1400px) {
   .quienessomos {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 283px 283px 1fr;
-    grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b";
     grid-template-rows: 100px 150px 283px 283px 50px;
-    align-items: center; }
+    grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b"; }
   img {
     width: 100%; }
   .populares {
@@ -189,43 +194,45 @@ h3 {
     align-items: center;
     grid-template-columns: 1fr 283px 283px 1fr;
     grid-template-rows: 100px 283px 283px 50px;
-    grid-template-areas: "a c c b " "a d e b " "a f g b "; }
+    grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b"; }
   .navbottom {
     height: 140; }
   .navbottom {
     display: none; }
   .sectionproductos {
     display: grid;
-    grid-template-areas: "a c c c b" "a d m e b" "a f m g b" "a h m i b" "a j m k b ";
+    align-items: center;
     grid-template-columns: 1fr 283px 100px 283px 1fr;
-    grid-template-rows: 150px 283px 283px 283px 283px 100px;
-    align-items: center; }
+    grid-template-rows: 80px 283px 283px 283px 283px 100px;
+    grid-template-areas: "a c c c b" "a d m e b" "a f m g b" "a h m i b" "a j m k b "; }
   .sectionsobrenosotros {
     display: grid;
-    grid-template-columns: 1fr 350px 350px 1fr;
+    align-items: baseline;
+    grid-template-columns: 1fr 370px 370px 1fr;
     grid-template-rows: 150px 220px 200px 80px;
     grid-template-areas: "a c c b" "a d e b" "a f g b"; }
   .sectioncontacto {
     display: grid;
+    align-items: baseline;
     grid-template-columns: 2fr 400px 2fr;
     grid-template-rows: 450px 140px 450px;
     grid-template-areas: "a c b" "a d b"; }
   .preguntasfrecuentes {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 70px 70px 70px 70px 70px 70px 70px;
+    align-items: center;
     grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-    row-gap: 25px;
-    align-items: center; } }
+    grid-template-rows: 60px 70px 70px 70px 70px 70px 70px 70px;
+    row-gap: 25px; } }
 
 /* celular en horizontal y tablet en vertical */
 @media only screen and (max-width: 950px) {
   .quienessomos {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 283px 283px 1fr;
-    grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b";
     grid-template-rows: 100px 150px 283px 283px 50px;
-    align-items: center; }
+    grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b"; }
   img {
     width: 100%; }
   .populares {
@@ -240,28 +247,29 @@ h3 {
     display: none; }
   .sectionproductos {
     display: grid;
-    grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b ";
+    align-items: center;
     grid-template-columns: 1fr 283px 283px 1fr;
-    grid-template-rows: 150px 283px 283px 283px 283px 100px;
-    align-items: center; }
+    grid-template-rows: 80px 283px 283px 283px 283px 100px;
+    grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b "; }
   .sectionsobrenosotros {
     display: grid;
+    align-items: baseline;
     grid-template-columns: 1fr 300px 300px 1fr;
     grid-template-rows: 150px 220px 200px 80px;
-    grid-template-areas: "a c c b" "a d e b" "a f g b";
-    align-items: center; }
+    grid-template-areas: "a c c b" "a d e b" "a f g b"; }
   .sectioncontacto {
     display: grid;
+    align-items: baseline;
     grid-template-columns: 2fr 350px 2fr;
     grid-template-rows: 450px 140px 450px;
     grid-template-areas: "a c b" "a d b"; }
   .preguntasfrecuentes {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 75px 75px 75px 75px 75px 75px 75px;
+    align-items: center;
     grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-    row-gap: 10px;
-    align-items: center; } }
+    grid-template-rows: 60px 75px 75px 75px 75px 75px 75px 75px;
+    row-gap: 10px; } }
 
 /* este es el media para la pantalla de celular use 600px */
 @media only screen and (max-width: 600px) {
@@ -271,10 +279,10 @@ h3 {
     width: 80px; }
   .quienessomos {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 200px 200px 1fr;
-    grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b";
     grid-template-rows: 100px 150px 200px 200px 50px;
-    align-items: center; }
+    grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b"; }
   img {
     width: 100%; }
   .quienessomos2 {
@@ -301,10 +309,10 @@ h3 {
     display: none; }
   .sectionproductos {
     display: grid;
-    grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b ";
+    align-items: center;
     grid-template-columns: 1fr 200px 200px 1fr;
-    grid-template-rows: 150px 200px 200px 200px 200px 100px;
-    align-items: center; }
+    grid-template-rows: 80px 200px 200px 200px 200px 100px;
+    grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b "; }
   .imgproductos1 {
     width: 200px;
     height: 200px; }
@@ -331,22 +339,24 @@ h3 {
     height: 200px; }
   .sectionsobrenosotros {
     display: grid;
+    align-items: baseline;
     grid-template-columns: 1fr 300px 1fr;
     grid-template-rows: 100px 220px 100px 150px 200px 50px;
     grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b";
     row-gap: 5px; }
   .sectioncontacto {
     display: grid;
+    align-items: baseline;
     grid-template-columns: 1fr 350px 1fr;
     grid-template-rows: 450px 140px 450px;
     grid-template-areas: "a c b" "a d b"; }
   .preguntasfrecuentes {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 85px 85px 95px 95px 85px 85px 85px;
+    align-items: center;
     grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-    row-gap: 5px;
-    align-items: center; } }
+    grid-template-rows: 60px 85px 85px 95px 95px 85px 85px 85px;
+    row-gap: 5px; } }
 
 /* este es el media para los telefonos mas chiquitos menos de 420px */
 @media only screen and (max-width: 420px) {
@@ -355,10 +365,10 @@ h3 {
     text-align: center; }
   .quienessomos {
     display: grid;
+    align-items: center;
     grid-template-columns: 1fr 170px 170px 1fr;
-    grid-template-areas: "a c c b" "a d d b" "a e f b" "a g h b";
     grid-template-rows: 100px 150px 170px 170px 50px;
-    align-items: center; }
+    grid-template-areas: "a c c b" "a d d b" "a e f b" "a g h b"; }
   .quienessomos2 {
     width: 170px;
     height: 170px; }
@@ -385,10 +395,10 @@ h3 {
     display: none; }
   .sectionproductos {
     display: grid;
-    grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b ";
+    align-items: center;
     grid-template-columns: 1fr 180px 180px 1fr;
-    grid-template-rows: 150px 180px 180px 180px 180px 100px;
-    align-items: center; }
+    grid-template-rows: 80px 180px 180px 180px 180px 100px;
+    grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b "; }
   .imgproductos1 {
     width: 180px;
     height: 180px; }
@@ -415,22 +425,24 @@ h3 {
     height: 180px; }
   .sectionsobrenosotros {
     display: grid;
+    align-items: baseline;
     grid-template-columns: 1fr 300px 1fr;
     grid-template-rows: 100px 220px 100px 150px 200px 50px;
     grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b";
     row-gap: 8px; }
   .sectioncontacto {
     display: grid;
+    align-items: baseline;
     grid-template-columns: 1fr 300px 1fr;
     grid-template-rows: 400px 140px 400px;
     grid-template-areas: "a c b" "a d b"; }
   .preguntasfrecuentes {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 100px 110px 110px 110px 110px 110px 110px 110px;
+    align-items: center;
     grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-    row-gap: 0px;
-    align-items: center; } }
+    grid-template-rows: 60px 110px 110px 110px 110px 110px 110px 110px;
+    row-gap: 0px; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
