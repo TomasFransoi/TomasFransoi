@@ -429,7 +429,7 @@ h3 {
     grid-template-columns: 1fr 300px 1fr;
     grid-template-rows: 100px 220px 100px 150px 200px 50px;
     grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b";
-    row-gap: 8px; }
+    row-gap: 20px; }
   .sectioncontacto {
     display: grid;
     align-items: baseline;
