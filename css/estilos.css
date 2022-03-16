@@ -15,21 +15,21 @@ h2 {
   text-align: center;
   color: #E1DEE4; }
 
-.populares {
+.Populares {
   display: grid;
   align-items: center;
   grid-template-columns: 2fr 25% 283px 283px 25% 2fr;
   grid-template-rows: 100px 283px 283px 50px;
   grid-template-areas: "a c c c c b" "a n d e h b" "a n f g h b "; }
-  .populares .productospopulares {
+  .Populares .ProductosPopulares {
     grid-area: c; }
-  .populares .productospopulares1 {
+  .Populares .ProductosPopulares1 {
     grid-area: d; }
-  .populares .productospopulares2 {
+  .Populares .ProductosPopulares2 {
     grid-area: e; }
-  .populares .productospopulares3 {
+  .Populares .ProductosPopulares3 {
     grid-area: f; }
-  .populares .productospopulares4 {
+  .Populares .ProductosPopulares4 {
     grid-area: g; }
 
 h3 {
@@ -38,11 +38,7 @@ h3 {
 p {
   color: white; }
 
-.nav {
-  margin: 0px;
-  text-align: right; }
-
-.divtoplogo {
+.DivTopLogo {
   display: flex;
   align-items: center; }
 
@@ -55,9 +51,9 @@ footer {
   align-items: center;
   background-color: black;
   height: 150px; }
-  footer .navbottom {
+  footer .NavBottom {
     text-align: right; }
-    footer .navbottom li:hover {
+    footer .NavBottom li:hover {
       color: red; }
   footer li {
     color: white;
@@ -66,146 +62,140 @@ footer {
   footer .UlContactoFooter {
     padding: 0%; }
 
-.ulbottom {
+.UlBottom {
   display: inline-block;
   height: 100%; }
 
 h4 {
   color: #E1DEE4; }
 
-.divbottom {
+.DivBottom {
   text-align: center; }
 
-.divtop {
-  height: 190px; }
-
-.logo {
+.Logo {
   width: 210px; }
 
-.divbottomlogo {
+.DivBottomLogo {
   display: flex;
   align-items: center; }
 
-.sectionsobrenosotros {
+.SectionSobreNosotros {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 400px 400px 1fr;
   grid-template-rows: 50px 300px 300px 50px;
   grid-template-areas: "a c c b" "a d e b" "a f g b"; }
-  .sectionsobrenosotros .h1sobrenosotros {
+  .SectionSobreNosotros .h1SobreNosotros {
     grid-area: c; }
-  .sectionsobrenosotros .psobrenosotros1 {
+  .SectionSobreNosotros .PSobreNosotros1 {
     font-family: 'Ubuntu', sans-serif;
     grid-area: d; }
-  .sectionsobrenosotros .psobrenosotros2 {
+  .SectionSobreNosotros .PSobreNosotros2 {
     font-family: 'Ubuntu', sans-serif;
     grid-area: f; }
-  .sectionsobrenosotros .psobrenosotros3 {
+  .SectionSobreNosotros .PSobreNosotros3 {
     font-family: 'Ubuntu', sans-serif;
     grid-area: e; }
-  .sectionsobrenosotros .psobrenosotros4 {
+  .SectionSobreNosotros .PSobreNosotros4 {
     font-family: 'Ubuntu', sans-serif;
     grid-area: g; }
 
-.sectionproductos {
+.SectionProductos {
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 283px 283px 283px 283px 1fr;
   grid-template-rows: 80px 283px 283px 150px;
   grid-template-areas: "a c c c c b" "a d e f g b" "a h i j k b "; }
-  .sectionproductos .productosimg {
+  .SectionProductos .ProductosImg {
     grid-area: c;
     padding-bottom: 20px; }
-  .sectionproductos .imgproductos1 {
+  .SectionProductos .ImgProductos1 {
     grid-area: d; }
-  .sectionproductos .imgproductos2 {
+  .SectionProductos .ImgProductos2 {
     grid-area: e; }
-  .sectionproductos .imgproductos3 {
+  .SectionProductos .ImgProductos3 {
     grid-area: f; }
-  .sectionproductos .imgproductos4 {
+  .SectionProductos .ImgProductos4 {
     grid-area: g; }
-  .sectionproductos .imgproductos5 {
+  .SectionProductos .ImgProductos5 {
     grid-area: h; }
-  .sectionproductos .imgproductos6 {
+  .SectionProductos .ImgProductos6 {
     grid-area: i; }
-  .sectionproductos .imgproductos7 {
+  .SectionProductos .ImgProductos7 {
     grid-area: j; }
-  .sectionproductos .imgproductos8 {
+  .SectionProductos .ImgProductos8 {
     grid-area: k; }
 
 h3 {
   font-family: 'Ubuntu', sans-serif; }
 
-.sectioncontacto {
+.SectionContacto {
   display: grid;
   align-items: baseline;
   grid-template-columns: 3fr 450px 3fr;
   grid-template-rows: 500px 140px 500px;
   grid-template-areas: "a c b" "a d b"; }
-  .sectioncontacto .h1contacto {
+  .SectionContacto .h1Contacto {
     grid-area: c; }
-  .sectioncontacto .articlecontacto {
+  .SectionContacto .ArticleContacto {
     grid-area: d; }
-  .sectioncontacto input {
+  .SectionContacto input {
     width: 100%;
     margin: 2px; }
 
-.PreguntasExtend, .preguntasfrecuentes {
+.PreguntasExtend, .PreguntasFrecuentes {
   display: grid;
   grid-template-columns: 100%;
   align-items: center;
   grid-template-areas: "a" "b" "c" "d" "e" "f" "g"; }
 
-.preguntasfrecuentes {
+.PreguntasFrecuentes {
   grid-template-rows: 60px 70px 70px 70px 70px 70px 70px 70px;
   row-gap: 40px; }
 
-.quienessomos {
+.QuienesSomos {
   display: grid;
   align-items: center;
   grid-template-columns: 2fr 283px 283px 283px 283px 2fr;
   grid-template-rows: 100px 150px 283px 50px;
   grid-template-areas: "a c c c c b" "a m d d l b" "a e f g h b "; }
-  .quienessomos .quienessomos0 {
+  .QuienesSomos .QuienesSomos0 {
     grid-area: c; }
-  .quienessomos .quienessomos1 {
+  .QuienesSomos .QuienesSomos1 {
     grid-area: d; }
-  .quienessomos .quienessomos2 {
+  .QuienesSomos .QuienesSomos2 {
     grid-area: e; }
-  .quienessomos .quienessomos3 {
+  .QuienesSomos .QuienesSomos3 {
     grid-area: f; }
-  .quienessomos .quienessomos4 {
+  .QuienesSomos .QuienesSomos4 {
     grid-area: g; }
-  .quienessomos .quienessomos5 {
+  .QuienesSomos .QuienesSomos5 {
     grid-area: h; }
 
 /* tablet en horizontal */
 @media only screen and (max-width: 1400px) {
-  .quienessomos {
+  .QuienesSomos {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 283px 283px 1fr;
     grid-template-rows: 100px 150px 283px 283px 50px;
     grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b"; }
   img {
-    width: 100%; }
-  .populares {
+    width: 100%;
+    height: 100%; }
+  .Populares {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 283px 283px 1fr;
     grid-template-rows: 100px 283px 283px 50px;
-    grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b"; }
-  .navbottom {
-    height: 140; }
-  .navbottom {
-    display: none; }
-  .sectionproductos {
+    grid-template-areas: "a c c b" "a d e b" "a f g b "; }
+  .SectionProductos {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 283px 100px 283px 1fr;
     grid-template-rows: 80px 283px 283px 283px 283px 100px;
     grid-template-areas: "a c c c b" "a d m e b" "a f m g b" "a h m i b" "a j m k b "; }
-  .sectionsobrenosotros {
+  .SectionSobreNosotros {
     display: grid;
     align-items: baseline;
     grid-template-columns: 1fr 370px 370px 1fr;
@@ -217,7 +207,7 @@ h3 {
     grid-template-columns: 2fr 400px 2fr;
     grid-template-rows: 450px 140px 450px;
     grid-template-areas: "a c b" "a d b"; }
-  .preguntasfrecuentes {
+  .PreguntasFrecuentes {
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
@@ -227,7 +217,9 @@ h3 {
 
 /* celular en horizontal y tablet en vertical */
 @media only screen and (max-width: 950px) {
-  .quienessomos {
+  .NavBottom {
+    display: none; }
+  .QuienesSomos {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 283px 283px 1fr;
@@ -235,35 +227,31 @@ h3 {
     grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b"; }
   img {
     width: 100%; }
-  .populares {
+  .Populares {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 283px 1fr;
     grid-template-rows: 100px 283px 283px 283px 283px 50px;
     grid-template-areas: "a c b" "a d b" "a e b " "a f b " "a g b "; }
-  .navbottom {
-    height: 140; }
-  .navbottom {
-    display: none; }
-  .sectionproductos {
+  .SectionProductos {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 283px 283px 1fr;
     grid-template-rows: 80px 283px 283px 283px 283px 100px;
     grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b "; }
-  .sectionsobrenosotros {
+  .SectionSobreNosotros {
     display: grid;
     align-items: baseline;
     grid-template-columns: 1fr 300px 300px 1fr;
-    grid-template-rows: 150px 220px 200px 80px;
+    grid-template-rows: 150px 250px 200px 80px;
     grid-template-areas: "a c c b" "a d e b" "a f g b"; }
-  .sectioncontacto {
+  .SectionContacto {
     display: grid;
     align-items: baseline;
     grid-template-columns: 2fr 350px 2fr;
     grid-template-rows: 450px 140px 450px;
     grid-template-areas: "a c b" "a d b"; }
-  .preguntasfrecuentes {
+  .PreguntasFrecuentes {
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
@@ -273,11 +261,11 @@ h3 {
 
 /* este es el media para la pantalla de celular use 600px */
 @media only screen and (max-width: 600px) {
-  .divtoplogo {
+  .DivTopLogo {
     width: 140px; }
-  .logo {
+  .Logo {
     width: 80px; }
-  .quienessomos {
+  .QuienesSomos {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 200px 200px 1fr;
@@ -285,72 +273,68 @@ h3 {
     grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b"; }
   img {
     width: 100%; }
-  .quienessomos2 {
+  .QuienesSomos2 {
     width: 200px;
     height: 200px; }
-  .quienessomos3 {
+  .QuienesSomos3 {
     width: 200px;
     height: 200px; }
-  .quienessomos4 {
+  .QuienesSomos4 {
     width: 200px;
     height: 200px; }
-  .quienessomos5 {
+  .QuienesSomos5 {
     width: 200px;
     height: 200px; }
-  .populares {
+  .Populares {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 283px 1fr;
     grid-template-rows: 100px 283px 283px 283px 283px 50px;
     grid-template-areas: "a c b" "a d b" "a e b " "a f b " "a g b "; }
-  .navbottom {
-    height: 140; }
-  .navbottom {
-    display: none; }
-  .sectionproductos {
+  .SectionProductos {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 200px 200px 1fr;
     grid-template-rows: 80px 200px 200px 200px 200px 100px;
     grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b "; }
-  .imgproductos1 {
+  .ImgProductos1 {
     width: 200px;
     height: 200px; }
-  .imgproductos2 {
+  .ImgProductos2 {
     width: 200px;
     height: 200px; }
-  .imgproductos3 {
+  .ImgProductos3 {
     width: 200px;
     height: 200px; }
-  .imgproductos4 {
+  .ImgProductos4 {
     width: 200px;
     height: 200px; }
-  .imgproductos5 {
+  .ImgProductos5 {
     width: 200px;
     height: 200px; }
-  .imgproductos6 {
+  .ImgProductos6 {
     width: 200px;
     height: 200px; }
-  .imgproductos7 {
+  .ImgProductos7 {
     width: 200px;
     height: 200px; }
-  .imgproductos8 {
+  .ImgProductos8 {
     width: 200px;
     height: 200px; }
-  .sectionsobrenosotros {
+  .SectionSobreNosotros {
     display: grid;
     align-items: baseline;
     grid-template-columns: 1fr 300px 1fr;
-    grid-template-rows: 100px 220px 100px 150px 200px 50px;
+    grid-template-rows: 100px 250px 100px 150px 200px 50px;
     grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b";
     row-gap: 5px; }
-  .sectioncontacto {
+  .SectionContacto {
     display: grid;
     align-items: baseline;
     grid-template-columns: 1fr 350px 1fr;
     grid-template-rows: 450px 140px 450px;
     grid-template-areas: "a c b" "a d b"; }
-  .preguntasfrecuentes {
+  .PreguntasFrecuentes {
     display: grid;
     grid-template-columns: 100%;
     align-items: center;
@@ -360,83 +344,76 @@ h3 {
 
 /* este es el media para los telefonos mas chiquitos menos de 420px */
 @media only screen and (max-width: 420px) {
-  .nav {
-    margin: 0px;
-    text-align: center; }
-  .quienessomos {
+  .QuienesSomos {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 170px 170px 1fr;
     grid-template-rows: 100px 150px 170px 170px 50px;
     grid-template-areas: "a c c b" "a d d b" "a e f b" "a g h b"; }
-  .quienessomos2 {
+  .QuienesSomos2 {
     width: 170px;
     height: 170px; }
-  .quienessomos3 {
+  .QuienesSomos3 {
     width: 170px;
     height: 170px; }
-  .quienessomos4 {
+  .QuienesSomos4 {
     width: 170px;
     height: 170px; }
-  .quienessomos5 {
+  .QuienesSomos5 {
     width: 170px;
     height: 170px; }
   img {
     width: 100%; }
-  .populares {
+  .Populares {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 283px 1fr;
     grid-template-rows: 100px 283px 283px 283px 283px 50px;
     grid-template-areas: "a c b" "a d b" "a e b " "a f b " "a g b "; }
-  .navbottom {
-    height: 140; }
-  .navbottom {
-    display: none; }
-  .sectionproductos {
+  .SectionProductos {
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 180px 180px 1fr;
     grid-template-rows: 80px 180px 180px 180px 180px 100px;
     grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b "; }
-  .imgproductos1 {
+  .ImgProductos1 {
     width: 180px;
     height: 180px; }
-  .imgproductos2 {
+  .ImgProductos2 {
     width: 180px;
     height: 180px; }
-  .imgproductos3 {
+  .ImgProductos3 {
     width: 180px;
     height: 180px; }
-  .imgproductos4 {
+  .ImgProductos4 {
     width: 180px;
     height: 180px; }
-  .imgproductos5 {
+  .ImgProductos5 {
     width: 180px;
     height: 180px; }
-  .imgproductos6 {
+  .ImgProductos6 {
     width: 180px;
     height: 180px; }
-  .imgproductos7 {
+  .ImgProductos7 {
     width: 180px;
     height: 180px; }
-  .imgproductos8 {
+  .ImgProductos8 {
     width: 180px;
     height: 180px; }
-  .sectionsobrenosotros {
+  .SectionSobreNosotros {
     display: grid;
     align-items: baseline;
     grid-template-columns: 1fr 300px 1fr;
     grid-template-rows: 100px 220px 100px 150px 200px 50px;
     grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b";
     row-gap: 20px; }
-  .sectioncontacto {
+  .SectionContacto {
     display: grid;
     align-items: baseline;
     grid-template-columns: 1fr 300px 1fr;
     grid-template-rows: 400px 140px 400px;
     grid-template-areas: "a c b" "a d b"; }
-  .preguntasfrecuentes {
+  .PreguntasFrecuentes {
     display: grid;
     grid-template-columns: 100%;
     align-items: center;

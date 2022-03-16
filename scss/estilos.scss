@@ -27,25 +27,25 @@ h2 {
     grid-template-rows: $rows;
     grid-template-areas: $areas;
 }
-.populares {
+.Populares {
     @include grids(grid,center,2fr 25% 283px 283px 25% 2fr,100px 283px 283px 50px,"a c c c c b""a n d e h b""a n f g h b ");
-    .productospopulares {
+    .ProductosPopulares {
         grid-area: c;
     }
 
-    .productospopulares1 {
+    .ProductosPopulares1 {
         grid-area: d;
     }
 
-    .productospopulares2 {
+    .ProductosPopulares2 {
         grid-area: e;
     }
 
-    .productospopulares3 {
+    .ProductosPopulares3 {
         grid-area: f;
     }
 
-    .productospopulares4 {
+    .ProductosPopulares4 {
         grid-area: g;
     }
 }
@@ -60,24 +60,13 @@ h3 {
 p {
     color: white;
 }
-
-.nav {
-    margin: 0px;
-    text-align: right;
-
-}
-
-.divtoplogo {
+.DivTopLogo {
     display: flex;
     align-items: center;
 }
-
-
 main {
     background-color: blue;
 }
-
-
 footer {
 
     display: flex;
@@ -86,7 +75,7 @@ footer {
     background-color: black;
     height: 150px;
 
-    .navbottom {
+    .NavBottom {
         text-align: right;
 
         li:hover {
@@ -105,8 +94,7 @@ footer {
     }
 
 }
-
-.ulbottom {
+.UlBottom {
     display: inline-block;
     height: 100%;
 }
@@ -117,87 +105,84 @@ h4 {
 
 
 
-.divbottom {
+.DivBottom {
     text-align: center;
 }
 
-.divtop {
-    height: 190px;
-}
 
-.logo {
+.Logo {
     width: 210px;
 }
 
-.divbottomlogo {
+.DivBottomLogo {
     display: flex;
     align-items: center;
 }
 
-.sectionsobrenosotros {
+.SectionSobreNosotros {
     @include grids(grid,center,1fr 400px 400px 1fr,50px 300px 300px 50px, "a c c b""a d e b""a f g b");
 
-    .h1sobrenosotros {
+    .h1SobreNosotros {
         grid-area: c;
     }
 
-    .psobrenosotros1 {
+    .PSobreNosotros1 {
         font-family: 'Ubuntu', sans-serif;
         grid-area: d;
     }
 
-    .psobrenosotros2 {
+    .PSobreNosotros2 {
         font-family: 'Ubuntu', sans-serif;
         grid-area: f;
     }
 
-    .psobrenosotros3 {
+    .PSobreNosotros3 {
         font-family: 'Ubuntu', sans-serif;
         grid-area: e;
     }
 
-    .psobrenosotros4 {
+    .PSobreNosotros4 {
         font-family: 'Ubuntu', sans-serif;
         grid-area: g;
     }
 
 }
-.sectionproductos {
+.SectionProductos {
     @include grids(grid,center,1fr 283px 283px 283px 283px 1fr,80px 283px 283px 150px,"a c c c c b""a d e f g b""a h i j k b ");
-    .productosimg {
+    .ProductosImg {
         grid-area: c;
         padding-bottom: 20px;
     }
 
-    .imgproductos1 {
+    .ImgProductos1 {
         grid-area: d;
     }
 
-    .imgproductos2 {
+    .ImgProductos2 {
         grid-area: e;
     }
 
-    .imgproductos3 {
+    .ImgProductos3 {
         grid-area: f;
     }
 
-    .imgproductos4 {
+    .ImgProductos4 {
         grid-area: g;
     }
 
-    .imgproductos5 {
+    .ImgProductos5 {
         grid-area: h;
     }
 
-    .imgproductos6 {
+    .ImgProductos6 {
         grid-area: i;
     }
 
-    .imgproductos7 {
+    .ImgProductos7 {
         grid-area: j;
     }
 
-    .imgproductos8 {
+    .ImgProductos8 {
         grid-area: k;
     }
 }
@@ -206,13 +191,13 @@ h3 {
     font-family: 'Ubuntu', sans-serif;
 }
 
-.sectioncontacto {
+.SectionContacto {
     @include grids(grid,baseline,3fr 450px 3fr,500px 140px 500px,"a c b""a d b");
-    .h1contacto {
+    .h1Contacto {
         grid-area: c;
     }
 
-    .articlecontacto {
+    .ArticleContacto {
         grid-area: d;
     }
 
@@ -228,35 +213,35 @@ h3 {
     align-items: center;
     grid-template-areas: "a""b""c""d""e""f""g";
 }
-.preguntasfrecuentes {
+.PreguntasFrecuentes {
     @extend .PreguntasExtend;
     grid-template-rows: 60px 70px 70px 70px 70px 70px 70px 70px;
     row-gap: 40px;
 }
 
-.quienessomos {
+.QuienesSomos {
     @include grids(grid,center,2fr 283px 283px 283px 283px 2fr,100px 150px 283px 50px,"a c c c c b""a m d d l b""a e f g h b ");
-    .quienessomos0 {
+    .QuienesSomos0 {
         grid-area: c;
     }
 
-    .quienessomos1 {
+    .QuienesSomos1 {
         grid-area: d;
     }
 
-    .quienessomos2 {
+    .QuienesSomos2 {
         grid-area: e;
     }
 
-    .quienessomos3 {
+    .QuienesSomos3 {
         grid-area: f;
     }
 
-    .quienessomos4 {
+    .QuienesSomos4 {
         grid-area: g;
     }
 
-    .quienessomos5 {
+    .QuienesSomos5 {
         grid-area: h;
     }
 }
@@ -264,31 +249,24 @@ h3 {
 
 /* tablet en horizontal */
 @media only screen and (max-width: 1400px) {
-    .quienessomos {
+    .QuienesSomos {
         @include grids(grid,center,1fr 283px 283px 1fr,100px 150px 283px 283px 50px,"a c c b""a d d b""a e f b ""a g h b");
     }
 
     img {
         width: 100%;
+        height: 100%;
     }
 
-    .populares {
-        @include grids(grid,center,1fr 283px 283px 1fr,100px 283px 283px 50px,"a c c b""a d d b""a e f b ""a g h b");
+    .Populares{
+        @include grids(grid,center,1fr 283px 283px 1fr,100px 283px 283px 50px,"a c c b""a d e b""a f g b ");
     }
 
-    .navbottom {
-        height: 140;
-    }
-
-    .navbottom {
-        display: none;
-    }
-
-    .sectionproductos {
+    .SectionProductos {
         @include grids(grid,center,1fr 283px 100px 283px 1fr,80px 283px 283px 283px 283px 100px,"a c c c b""a d m e b""a f m g b""a h m i b""a j m k b ");
     }
 
-    .sectionsobrenosotros {
+    .SectionSobreNosotros {
         @include grids(grid,baseline,1fr 370px 370px 1fr,150px 220px 200px 80px,"a c c b""a d e b""a f g b");
     }
 
@@ -296,7 +274,7 @@ h3 {
         @include grids(grid,baseline,2fr 400px 2fr,450px 140px 450px,"a c b""a d b");
     }
 
-    .preguntasfrecuentes {
+    .PreguntasFrecuentes {
         display: grid;
         grid-template-columns: 100%;
         align-items: center;
@@ -308,7 +286,10 @@ h3 {
 
 /* celular en horizontal y tablet en vertical */
 @media only screen and (max-width: 950px) {
-    .quienessomos {
+    .NavBottom {
+        display: none;
+    }
+    .QuienesSomos {
         @include grids(grid,center,1fr 283px 283px 1fr,100px 150px 283px 283px 50px,"a c c b""a d d b""a e f b ""a g h b");
     }
 
@@ -316,31 +297,22 @@ h3 {
         width: 100%;
     }
 
-    .populares {
+    .Populares {
         @include grids(grid,center,1fr 283px 1fr,100px 283px 283px 283px 283px 50px,"a c b""a d b""a e b ""a f b ""a g b ");
     }
-
-    .navbottom {
-        height: 140;
-    }
-
-    .navbottom {
-        display: none;
-    }
-
-    .sectionproductos {
+    .SectionProductos {
         @include grids(grid,center,1fr 283px 283px 1fr,80px 283px 283px 283px 283px 100px,"a c c b""a d e b""a f g b""a h i b"" a j k b ");
     }
 
-    .sectionsobrenosotros {
-        @include grids(grid,baseline,1fr 300px 300px 1fr,150px 220px 200px 80px,"a c c b""a d e b""a f g b");
+    .SectionSobreNosotros {
+        @include grids(grid,baseline,1fr 300px 300px 1fr,150px 250px 200px 80px,"a c c b""a d e b""a f g b");
     }
 
-    .sectioncontacto {
+    .SectionContacto {
         @include grids(grid,baseline,2fr 350px 2fr,450px 140px 450px,"a c b""a d b");
     }
 
-    .preguntasfrecuentes {
+    .PreguntasFrecuentes {
         display: grid;
         grid-template-columns: 100%;
         align-items: center;
@@ -352,15 +324,15 @@ h3 {
 
 /* este es el media para la pantalla de celular use 600px */
 @media only screen and (max-width: 600px) {
-    .divtoplogo {
+    .DivTopLogo {
         width: 140px;
     }
 
-    .logo {
+    .Logo {
         width: 80px;
     }
 
-    .quienessomos {
+    .QuienesSomos {
         @include grids(grid,center,1fr 200px 200px 1fr,100px 150px 200px 200px 50px,"a c c b""a d d b""a e f b ""a g h b");
     }
 
@@ -368,91 +340,82 @@ h3 {
         width: 100%;
     }
 
-    .quienessomos2 {
+    .QuienesSomos2 {
         width: 200px;
         height: 200px;
     }
 
-    .quienessomos3 {
+    .QuienesSomos3 {
         width: 200px;
         height: 200px;
     }
 
-    .quienessomos4 {
+    .QuienesSomos4 {
         width: 200px;
         height: 200px;
     }
 
-    .quienessomos5 {
+    .QuienesSomos5 {
         width: 200px;
         height: 200px;
     }
 
-    .populares {
+    .Populares {
         @include grids(grid,center,1fr 283px 1fr,100px 283px 283px 283px 283px 50px,"a c b""a d b""a e b ""a f b ""a g b ");
     }
-
-    .navbottom {
-        height: 140;
-    }
-
-    .navbottom {
-        display: none;
-    }
-
-    .sectionproductos {
+    .SectionProductos {
         @include grids(grid,center,1fr 200px 200px 1fr,80px 200px 200px 200px 200px 100px,"a c c b""a d e b""a f g b""a h i b"" a j k b ");
     }
 
-    .imgproductos1 {
+    .ImgProductos1 {
         width: 200px;
         height: 200px;
     }
-    .imgproductos2 {
-        width: 200px;
-        height: 200px;
-    }
-
-    .imgproductos3 {
+    .ImgProductos2 {
         width: 200px;
         height: 200px;
     }
 
-    .imgproductos4 {
+    .ImgProductos3 {
         width: 200px;
         height: 200px;
     }
 
-    .imgproductos5 {
+    .ImgProductos4 {
         width: 200px;
         height: 200px;
     }
 
-    .imgproductos6 {
+    .ImgProductos5 {
         width: 200px;
         height: 200px;
     }
 
-    .imgproductos7 {
+    .ImgProductos6 {
         width: 200px;
         height: 200px;
     }
 
-    .imgproductos8 {
+    .ImgProductos7 {
         width: 200px;
         height: 200px;
     }
 
-    .sectionsobrenosotros {
-        @include grids(grid,baseline,1fr 300px 1fr,100px 220px 100px 150px 200px 50px,"a c b""a d b""a e b""a f b""a g b");
+    .ImgProductos8 {
+        width: 200px;
+        height: 200px;
+    }
+
+    .SectionSobreNosotros {
+        @include grids(grid,baseline,1fr 300px 1fr,100px 250px 100px 150px 200px 50px,"a c b""a d b""a e b""a f b""a g b");
         row-gap: 5px;
     }
 
-    .sectioncontacto {
+    .SectionContacto {
         @include grids(grid,baseline,1fr 350px 1fr,450px 140px 450px,"a c b""a d b");
     }
 
-    .preguntasfrecuentes {
+    .PreguntasFrecuentes {
         display: grid;
         grid-template-columns: 100%;
         align-items: center;
@@ -464,32 +427,26 @@ h3 {
 
 /* este es el media para los telefonos mas chiquitos menos de 420px */
 @media only screen and (max-width: 420px) {
-    .nav {
-        margin: 0px;
-        text-align: center;
-
-    }
-
-    .quienessomos {
+    .QuienesSomos {
         @include grids(grid,center,1fr 170px 170px 1fr,100px 150px 170px 170px 50px,"a c c b""a d d b""a e f b""a g h b");
     }
 
-    .quienessomos2 {
+    .QuienesSomos2 {
         width: 170px;
         height: 170px;
     }
 
-    .quienessomos3 {
+    .QuienesSomos3 {
         width: 170px;
         height: 170px;
     }
 
-    .quienessomos4 {
+    .QuienesSomos4 {
         width: 170px;
         height: 170px;
     }
 
-    .quienessomos5 {
+    .QuienesSomos5 {
         width: 170px;
         height: 170px;
     }
@@ -498,72 +455,63 @@ h3 {
         width: 100%;
     }
 
-    .populares {
+    .Populares {
         @include grids(grid,center,1fr 283px 1fr,100px 283px 283px 283px 283px 50px,"a c b""a d b""a e b ""a f b ""a g b ");
     }
-
-    .navbottom {
-        height: 140;
-    }
-
-    .navbottom {
-        display: none;
-    }
-
-    .sectionproductos {
+    .SectionProductos {
         @include grids(grid,center,1fr 180px 180px 1fr,80px 180px 180px 180px 180px 100px,"a c c b""a d e b""a f g b""a h i b"" a j k b ");
     }
 
-    .imgproductos1 {
+    .ImgProductos1 {
         width: 180px;
         height: 180px;
     }
 
-    .imgproductos2 {
+    .ImgProductos2 {
         width: 180px;
         height: 180px;
     }
 
-    .imgproductos3 {
+    .ImgProductos3 {
         width: 180px;
         height: 180px;
     }
 
-    .imgproductos4 {
+    .ImgProductos4 {
         width: 180px;
         height: 180px;
     }
 
-    .imgproductos5 {
+    .ImgProductos5 {
         width: 180px;
         height: 180px;
     }
 
-    .imgproductos6 {
+    .ImgProductos6 {
         width: 180px;
         height: 180px;
     }
 
-    .imgproductos7 {
+    .ImgProductos7 {
         width: 180px;
         height: 180px;
     }
 
-    .imgproductos8 {
+    .ImgProductos8 {
         width: 180px;
         height: 180px;
     }
 
-    .sectionsobrenosotros {
+    .SectionSobreNosotros {
         @include grids(grid,baseline,1fr 300px 1fr,100px 220px 100px 150px 200px 50px,"a c b""a d b""a e b""a f b""a g b");
         row-gap: 20px;
     }
 
-    .sectioncontacto {
+    .SectionContacto {
         @include grids(grid,baseline,1fr 300px 1fr,400px 140px 400px,"a c b""a d b");
     }
 
-    .preguntasfrecuentes {
+    .PreguntasFrecuentes {
         display: grid;
         grid-template-columns: 100%;
         align-items: center;
