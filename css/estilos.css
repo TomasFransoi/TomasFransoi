@@ -9,18 +9,20 @@ ul {
 h1 {
   text-align: center;
   font-family: 'Roboto', sans-serif;
-  color: #E1DEE4; }
+  color: white; }
 
 h2 {
   text-align: center;
-  color: #E1DEE4; }
+  color: white; }
 
 .Populares {
   display: grid;
   align-items: center;
   grid-template-columns: 2fr 25% 283px 283px 25% 2fr;
   grid-template-rows: 100px 283px 283px 50px;
-  grid-template-areas: "a c c c c b" "a n d e h b" "a n f g h b "; }
+  grid-template-areas: "a c c c c b" "a n d e h b" "a n f g h b ";
+  row-gap: 5px;
+  column-gap: 5px; }
   .Populares .ProductosPopulares {
     grid-area: c; }
   .Populares .ProductosPopulares1 {
@@ -33,7 +35,7 @@ h2 {
     grid-area: g; }
 
 h3 {
-  color: #E1DEE4; }
+  color: white; }
 
 p {
   color: white; }
@@ -43,7 +45,8 @@ p {
   align-items: center; }
 
 main {
-  background-color: blue; }
+  background-image: url(../imagenes/fondo2.jpg);
+  background-size: 100%; }
 
 footer {
   display: flex;
@@ -67,7 +70,7 @@ footer {
   height: 100%; }
 
 h4 {
-  color: #E1DEE4; }
+  color: white; }
 
 .DivBottom {
   text-align: center; }
@@ -82,9 +85,10 @@ h4 {
 .SectionSobreNosotros {
   display: grid;
   align-items: center;
-  grid-template-columns: 1fr 400px 400px 1fr;
-  grid-template-rows: 50px 300px 300px 50px;
-  grid-template-areas: "a c c b" "a d e b" "a f g b"; }
+  grid-template-columns: 1fr 400px 1fr;
+  grid-template-rows: 50px auto auto auto auto 50px;
+  grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b";
+  row-gap: 10px; }
   .SectionSobreNosotros .h1SobreNosotros {
     grid-area: c; }
   .SectionSobreNosotros .PSobreNosotros1 {
@@ -105,7 +109,9 @@ h4 {
   align-items: center;
   grid-template-columns: 1fr 283px 283px 283px 283px 1fr;
   grid-template-rows: 80px 283px 283px 150px;
-  grid-template-areas: "a c c c c b" "a d e f g b" "a h i j k b "; }
+  grid-template-areas: "a c c c c b" "a d e f g b" "a h i j k b ";
+  row-gap: 5px;
+  column-gap: 5px; }
   .SectionProductos .ProductosImg {
     grid-area: c;
     padding-bottom: 20px; }
@@ -143,22 +149,23 @@ h3 {
     width: 100%;
     margin: 2px; }
 
-.PreguntasExtend, .PreguntasFrecuentes {
-  display: grid;
-  grid-template-columns: 100%;
-  align-items: center;
-  grid-template-areas: "a" "b" "c" "d" "e" "f" "g"; }
-
 .PreguntasFrecuentes {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 100%;
   grid-template-rows: 60px 70px 70px 70px 70px 70px 70px 70px;
-  row-gap: 40px; }
+  grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+  row-gap: 40px;
+  text-align: center; }
 
 .QuienesSomos {
   display: grid;
   align-items: center;
   grid-template-columns: 2fr 283px 283px 283px 283px 2fr;
   grid-template-rows: 100px 150px 283px 50px;
-  grid-template-areas: "a c c c c b" "a m d d l b" "a e f g h b "; }
+  grid-template-areas: "a c c c c b" "a m d d l b" "a e f g h b ";
+  row-gap: 5px;
+  column-gap: 5px; }
   .QuienesSomos .QuienesSomos0 {
     grid-area: c; }
   .QuienesSomos .QuienesSomos1 {
@@ -192,15 +199,15 @@ h3 {
   .SectionProductos {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 283px 100px 283px 1fr;
+    grid-template-columns: 1fr 283px 283px 1fr;
     grid-template-rows: 80px 283px 283px 283px 283px 100px;
-    grid-template-areas: "a c c c b" "a d m e b" "a f m g b" "a h m i b" "a j m k b "; }
+    grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" "a j k b"; }
   .SectionSobreNosotros {
     display: grid;
     align-items: baseline;
-    grid-template-columns: 1fr 370px 370px 1fr;
-    grid-template-rows: 150px 220px 200px 80px;
-    grid-template-areas: "a c c b" "a d e b" "a f g b"; }
+    grid-template-columns: 1fr 370px 1fr;
+    grid-template-rows: 50px auto auto auto auto 50px;
+    grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b"; }
   .sectioncontacto {
     display: grid;
     align-items: baseline;
@@ -209,11 +216,14 @@ h3 {
     grid-template-areas: "a c b" "a d b"; }
   .PreguntasFrecuentes {
     display: grid;
-    grid-template-columns: 100%;
     align-items: center;
-    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+    grid-template-columns: 100%;
     grid-template-rows: 60px 70px 70px 70px 70px 70px 70px 70px;
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
     row-gap: 25px; } }
+
+.nav-item:hover {
+  background-color: red; }
 
 /* celular en horizontal y tablet en vertical */
 @media only screen and (max-width: 950px) {
@@ -222,9 +232,9 @@ h3 {
   .QuienesSomos {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 283px 283px 1fr;
-    grid-template-rows: 100px 150px 283px 283px 50px;
-    grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b"; }
+    grid-template-columns: 1fr 283px 1fr;
+    grid-template-rows: 100px 150px 283px 283px 283px 283px 50px;
+    grid-template-areas: "a c b" "a d b" "a e b" "a f b " "a g b" "a h b"; }
   img {
     width: 100%; }
   .Populares {
@@ -242,9 +252,9 @@ h3 {
   .SectionSobreNosotros {
     display: grid;
     align-items: baseline;
-    grid-template-columns: 1fr 300px 300px 1fr;
-    grid-template-rows: 150px 250px 200px 80px;
-    grid-template-areas: "a c c b" "a d e b" "a f g b"; }
+    grid-template-columns: 1fr 300px 1fr;
+    grid-template-rows: 100px auto auto auto auto 50px;
+    grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b"; }
   .SectionContacto {
     display: grid;
     align-items: baseline;
@@ -253,10 +263,10 @@ h3 {
     grid-template-areas: "a c b" "a d b"; }
   .PreguntasFrecuentes {
     display: grid;
-    grid-template-columns: 100%;
     align-items: center;
-    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+    grid-template-columns: 100%;
     grid-template-rows: 60px 75px 75px 75px 75px 75px 75px 75px;
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
     row-gap: 10px; } }
 
 /* este es el media para la pantalla de celular use 600px */
@@ -268,23 +278,23 @@ h3 {
   .QuienesSomos {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 200px 200px 1fr;
-    grid-template-rows: 100px 150px 200px 200px 50px;
-    grid-template-areas: "a c c b" "a d d b" "a e f b " "a g h b"; }
+    grid-template-columns: 1fr 250px 1fr;
+    grid-template-rows: 100px 150px 250px 250px 250px 250px 50px;
+    grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b" "a h b"; }
   img {
     width: 100%; }
   .QuienesSomos2 {
-    width: 200px;
-    height: 200px; }
+    width: 250px;
+    height: 250px; }
   .QuienesSomos3 {
-    width: 200px;
-    height: 200px; }
+    width: 250px;
+    height: 250px; }
   .QuienesSomos4 {
-    width: 200px;
-    height: 200px; }
+    width: 250px;
+    height: 250px; }
   .QuienesSomos5 {
-    width: 200px;
-    height: 200px; }
+    width: 250px;
+    height: 250px; }
   .Populares {
     display: grid;
     align-items: center;
@@ -294,33 +304,33 @@ h3 {
   .SectionProductos {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 200px 200px 1fr;
-    grid-template-rows: 80px 200px 200px 200px 200px 100px;
-    grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b "; }
-  .ImgProductos1 {
-    width: 200px;
-    height: 200px; }
-  .ImgProductos2 {
-    width: 200px;
-    height: 200px; }
-  .ImgProductos3 {
-    width: 200px;
-    height: 200px; }
-  .ImgProductos4 {
-    width: 200px;
-    height: 200px; }
-  .ImgProductos5 {
-    width: 200px;
-    height: 200px; }
-  .ImgProductos6 {
-    width: 200px;
-    height: 200px; }
-  .ImgProductos7 {
-    width: 200px;
-    height: 200px; }
-  .ImgProductos8 {
-    width: 200px;
-    height: 200px; }
+    grid-template-columns: 1fr 283px 1fr;
+    grid-template-rows: 50px 283px 283px 283px 283px 283px 283px 283px 283px 50px;
+    grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b" "a h b" "a i b" "a j b" "a k b"; }
+    .SectionProductos .ImgProductos1 {
+      width: 283px;
+      height: 283px; }
+    .SectionProductos .ImgProductos2 {
+      width: 283px;
+      height: 283px; }
+    .SectionProductos .ImgProductos3 {
+      width: 283px;
+      height: 283px; }
+    .SectionProductos .ImgProductos4 {
+      width: 283px;
+      height: 283px; }
+    .SectionProductos .ImgProductos5 {
+      width: 283px;
+      height: 283px; }
+    .SectionProductos .ImgProductos6 {
+      width: 283px;
+      height: 283px; }
+    .SectionProductos .ImgProductos7 {
+      width: 283px;
+      height: 283px; }
+    .SectionProductos .ImgProductos8 {
+      width: 283px;
+      height: 283px; }
   .SectionSobreNosotros {
     display: grid;
     align-items: baseline;
@@ -336,10 +346,10 @@ h3 {
     grid-template-areas: "a c b" "a d b"; }
   .PreguntasFrecuentes {
     display: grid;
-    grid-template-columns: 100%;
     align-items: center;
+    grid-template-columns: 100%;
+    grid-template-rows: 60px 85px 85px 95px 95px 95px 110px 85px;
     grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
-    grid-template-rows: 60px 85px 85px 95px 95px 85px 85px 85px;
     row-gap: 5px; } }
 
 /* este es el media para los telefonos mas chiquitos menos de 420px */
@@ -347,21 +357,21 @@ h3 {
   .QuienesSomos {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 170px 170px 1fr;
-    grid-template-rows: 100px 150px 170px 170px 50px;
-    grid-template-areas: "a c c b" "a d d b" "a e f b" "a g h b"; }
+    grid-template-columns: 1fr 250px 1fr;
+    grid-template-rows: 100px 150px 250px 250px 250px 250px 50px;
+    grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b" "a h b"; }
   .QuienesSomos2 {
-    width: 170px;
-    height: 170px; }
+    width: 250px;
+    height: 250px; }
   .QuienesSomos3 {
-    width: 170px;
-    height: 170px; }
+    width: 250px;
+    height: 250px; }
   .QuienesSomos4 {
-    width: 170px;
-    height: 170px; }
+    width: 250px;
+    height: 250px; }
   .QuienesSomos5 {
-    width: 170px;
-    height: 170px; }
+    width: 250px;
+    height: 250px; }
   img {
     width: 100%; }
   .Populares {
@@ -373,38 +383,38 @@ h3 {
   .SectionProductos {
     display: grid;
     align-items: center;
-    grid-template-columns: 1fr 180px 180px 1fr;
-    grid-template-rows: 80px 180px 180px 180px 180px 100px;
-    grid-template-areas: "a c c b" "a d e b" "a f g b" "a h i b" " a j k b "; }
-  .ImgProductos1 {
-    width: 180px;
-    height: 180px; }
-  .ImgProductos2 {
-    width: 180px;
-    height: 180px; }
-  .ImgProductos3 {
-    width: 180px;
-    height: 180px; }
-  .ImgProductos4 {
-    width: 180px;
-    height: 180px; }
-  .ImgProductos5 {
-    width: 180px;
-    height: 180px; }
-  .ImgProductos6 {
-    width: 180px;
-    height: 180px; }
-  .ImgProductos7 {
-    width: 180px;
-    height: 180px; }
-  .ImgProductos8 {
-    width: 180px;
-    height: 180px; }
+    grid-template-columns: 1fr 210px 1fr;
+    grid-template-rows: 50px 200px 200px 200px 200px 200px 200px 200px 200px 50px;
+    grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b" "a h b" "a i b" "a j b" "a k b"; }
+    .SectionProductos .ImgProductos1 {
+      width: 200px;
+      height: 200px; }
+    .SectionProductos .ImgProductos2 {
+      width: 200px;
+      height: 200px; }
+    .SectionProductos .ImgProductos3 {
+      width: 200px;
+      height: 200px; }
+    .SectionProductos .ImgProductos4 {
+      width: 200px;
+      height: 200px; }
+    .SectionProductos .ImgProductos5 {
+      width: 200px;
+      height: 200px; }
+    .SectionProductos .ImgProductos6 {
+      width: 200px;
+      height: 200px; }
+    .SectionProductos .ImgProductos7 {
+      width: 200px;
+      height: 200px; }
+    .SectionProductos .ImgProductos8 {
+      width: 200px;
+      height: 200px; }
   .SectionSobreNosotros {
     display: grid;
     align-items: baseline;
-    grid-template-columns: 1fr 300px 1fr;
-    grid-template-rows: 100px 220px 100px 150px 200px 50px;
+    grid-template-columns: 1fr 250px 1fr;
+    grid-template-rows: 100px 285px 100px 190px 250px 50px;
     grid-template-areas: "a c b" "a d b" "a e b" "a f b" "a g b";
     row-gap: 20px; }
   .SectionContacto {
@@ -415,11 +425,13 @@ h3 {
     grid-template-areas: "a c b" "a d b"; }
   .PreguntasFrecuentes {
     display: grid;
-    grid-template-columns: 100%;
     align-items: center;
-    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+    grid-template-columns: 100%;
     grid-template-rows: 60px 110px 110px 110px 110px 110px 110px 110px;
-    row-gap: 0px; } }
+    grid-template-areas: "a" "b" "c" "d" "e" "f" "g";
+    row-gap: 0px; }
+  .DivLogo {
+    display: none; } }
 
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-collapse {
