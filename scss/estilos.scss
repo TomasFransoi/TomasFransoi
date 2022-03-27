@@ -14,6 +14,7 @@ h1 {
     text-align: center;
     font-family: 'Roboto', sans-serif;
     color: $color-title;
+    margin-top: 20px;
 }
 
 h2 {
@@ -28,7 +29,9 @@ h2 {
     grid-template-rows: $rows;
     grid-template-areas: $areas;
 }
-
+.nav-item:hover{
+    background-color: red;
+}
 .Populares {
     @include grids(grid, center, 2fr 25% 283px 283px 25% 2fr, 100px 283px 283px 50px, "a c c c c b""a n d e h b""a n f g h b ");
 
@@ -231,9 +234,12 @@ h3 {
 }
 
 .QuienesSomos {
-    @include grids(grid, center, 2fr 283px 283px 283px 283px 2fr, 100px 150px 283px 50px, "a c c c c b""a m d d l b""a e f g h b ");
+    @include grids(grid, center, 2fr 283px 283px 283px 283px 2fr,100px 100px 150px 283px 50px,"a m m m m b" "a c c c c b""a r d d l b""a e f g h b ");
     row-gap: 5px;
     column-gap: 5px;
+    .Bienvenido{
+        grid-area: m;
+    }
     .QuienesSomos0 {
         grid-area: c;
     }
@@ -263,7 +269,7 @@ h3 {
 /* tablet en horizontal */
 @media only screen and (max-width: 1400px) {
     .QuienesSomos {
-        @include grids(grid, center, 1fr 283px 283px 1fr, 100px 150px 283px 283px 50px, "a c c b""a d d b""a e f b ""a g h b");
+        @include grids(grid, center, 1fr 283px 283px 1fr,100px 100px 150px 283px 283px 50px,"a m m b" "a c c b""a d d b""a e f b ""a g h b");
     }
 
     img {
@@ -280,7 +286,7 @@ h3 {
     }
 
     .SectionSobreNosotros {
-        @include grids(grid, baseline, 1fr 370px 1fr, 50px auto auto auto auto 50px, "a c b""a d b""a e b""a f b""a g b");
+        @include grids(grid, baseline, 1fr 370px 1fr, 90px auto auto auto auto 50px, "a c b""a d b""a e b""a f b""a g b");
     }
 
     .sectioncontacto {
@@ -292,9 +298,7 @@ h3 {
         row-gap: 25px;
     }
 }
-.nav-item:hover{
-    background-color: red;
-}
+
 /* celular en horizontal y tablet en vertical */
 @media only screen and (max-width: 950px) {
     .NavBottom {
@@ -302,7 +306,7 @@ h3 {
     }
 
     .QuienesSomos {
-        @include grids(grid, center, 1fr 283px 1fr, 100px 150px 283px 283px 283px 283px 50px, "a c b""a d b""a e b""a f b ""a g b""a h b");
+        @include grids(grid, center, 1fr 283px 1fr,100px 100px 150px 283px 283px 283px 283px 50px,"a m b" "a c b""a d b""a e b""a f b ""a g b""a h b");
     }
 
     img {
@@ -342,7 +346,7 @@ h3 {
     }
 
     .QuienesSomos {
-        @include grids(grid, center, 1fr 250px 1fr, 100px 150px 250px 250px 250px 250px 50px, "a c b""a d b""a e b""a f b""a g b""a h b");
+        @include grids(grid, center, 1fr 250px 1fr,100px 100px 150px 250px 250px 250px 250px 50px,"a m b""a c b""a d b""a e b""a f b""a g b""a h b");
     }
 
     img {
@@ -435,7 +439,7 @@ h3 {
 /* este es el media para los telefonos mas chiquitos menos de 420px */
 @media only screen and (max-width: 420px) {
     .QuienesSomos {
-        @include grids(grid, center, 1fr 250px 1fr, 100px 150px 250px 250px 250px 250px 50px, "a c b""a d b""a e b""a f b""a g b""a h b");
+        @include grids(grid, center, 1fr 250px 1fr,100px 100px 150px 250px 250px 250px 250px 50px,"a m b" "a c b""a d b""a e b""a f b""a g b""a h b");
     }
 
     .QuienesSomos2 {
@@ -520,7 +524,7 @@ h3 {
 
     .PreguntasFrecuentes {
         @include grids(grid, center, 100%, 60px 110px 110px 110px 110px 110px 110px 110px, "a""b""c""d""e""f""g");
-        row-gap: 0px;
+        row-gap: 8px;
     }
 
     .DivLogo {
