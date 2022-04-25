@@ -33,8 +33,7 @@ h2 {
     background-color: red;
 }
 .Populares {
-    @include grids(grid, center, 2fr 25% 283px 283px 25% 2fr, 100px 283px 283px 50px, "a c c c c b""a n d e h b""a n f g h b ");
-
+    @include grids(grid, center, 2fr 25% 283px 283px 25% 2fr, 100px 283px 283px 50px,"a c c c c b""a n d e h b""a n f g h b");
     .ProductosPopulares {
         grid-area: c;
     }

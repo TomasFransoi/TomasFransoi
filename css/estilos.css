@@ -24,7 +24,7 @@ h2 {
   align-items: center;
   grid-template-columns: 2fr 25% 283px 283px 25% 2fr;
   grid-template-rows: 100px 283px 283px 50px;
-  grid-template-areas: "a c c c c b" "a n d e h b" "a n f g h b ";
+  grid-template-areas: "a c c c c b" "a n d e h b" "a n f g h b";
   row-gap: 5px;
   column-gap: 5px; }
   .Populares .ProductosPopulares {
