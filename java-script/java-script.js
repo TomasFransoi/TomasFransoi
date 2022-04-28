@@ -38,7 +38,7 @@ console.log(PromedioCurso);
 if (PromedioCurso < 5.5) {
     console.log("desempreño del curso deficiente");
     alert("desempreño del curso deficiente");
-} else if (PromedioCurso >= 5.5 && PromedioCurso <= 7) {
+} else if (PromedioCurso >= 5.5 && PromedioCurso <= 7.5) {
     console.log("desempreño del curso bueno");
     alert("desempreño del curso bueno");
 } else if (PromedioCurso >= 7.5 && PromedioCurso <= 9) {
