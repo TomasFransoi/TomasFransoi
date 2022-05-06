@@ -1,3 +1,12 @@
+function productos ( nombre , precioDelProducto ) {
+    producto = nombre;
+    alert("usted a seleccionado el producto " + producto);
+    cantidadDeProductos = prompt("cuantos productos quiere");
+    precio = cantidadDeProductos * precioDelProducto;
+    alert("El precio seria de " + precio + " pesos");
+    return cantidadDeProductos;
+    return precio;
+}
 let SiNo = " ";
 let precio = 0;
 let cantidadDeProductos = 0;
@@ -11,88 +20,40 @@ do {
 }
 switch (numeroDeProducto) {
     case 1:
-        producto = "Calcos fantasia";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 150;
-        alert("El precio seria de " + precio + " pesos");
-        break;
+        productos( "Calcos fantasia" , 150);
+    break
     case 2:
-        producto = "Calcos personalizadas";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 200;
-        alert("El precio seria de " + precio + " pesos");
-        break;
+        productos( "Calcos personalizadas" , 200);
+    break;
     case 3:
-        producto = "Calcos para motos";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 140;
-        alert("El precio seria de " + precio + " pesos");
+        productos( "Calcos para motos" , 140);
     break;
     case 4:
-        producto = "Calcos para baterias";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 130;
-        alert("El precio seria de " + precio + " pesos");
+        productos( "Calcos para baterias" , 130);
     break;
     case 5:
-        producto = "Calcos para lanchas";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 10450;
-        alert("El precio seria de " + precio + " pesos");
+        productos( "Calcos para lanchas" , 10450);
     break;
     case 6:
-        producto = "Bolsos porta celular";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 660;
-        alert("El precio seria de " + precio + " pesos");
+        productos( "Bolsos porta celular" , 660);
     break;
     case 7:
-        producto = "Bolso bajo asiento";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 550;
-        alert("El precio seria de " + precio + " pesos");
+        productos( "Bolso bajo asiento" , 550);
     break;
     case 8:
-        producto = "Cubre vaina";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 250;
-        alert("El precio seria de " + precio + " pesos");
+        productos( "Cubre vaina" , 250);
     break;
     case 9:
-        producto = "Pines para rayos";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 280;
-        alert("El precio seria de " + precio + " pesos");
+        productos( "Pines para rayos" , 280);
     break;
     case 10:
-        producto = "Protectores anti ralladura";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 300;
-        alert("El precio seria de " + precio + " pesos");
+        productos( "Protectores anti ralladura" , 300);
     break;
     case 11:
-        producto = "Fundas fantasia";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 280;
-        alert("El precio seria de " + precio + " pesos");
+        productos( "Fundas fantasia" , 280);
     break;
     case 12:
-        producto = "Fundas mtb";
-        alert("usted a seleccionado el producto " + producto);
-        cantidadDeProductos = prompt("cuantos productos quiere");
-        precio = cantidadDeProductos * 650;
-        alert("El precio seria de " + precio + " pesos");
+        productos( "Fundas mtb" , 650);
     break;
 }
 SiNo = prompt("Es correcta esta compra de " + cantidadDeProductos + " " + producto + " por " + precio + " (responda porfavor con un si o no)");
