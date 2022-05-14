@@ -1,61 +1,113 @@
-function productos ( nombre , precioDelProducto ) {
-    producto = nombre;
-    alert("usted a seleccionado el producto " + producto);
-    cantidadDeProductos = prompt("cuantos productos quiere");
-    precio = cantidadDeProductos * precioDelProducto;
-    alert("El precio seria de " + precio + " pesos");
-    return cantidadDeProductos;
-    return precio;
+class Producto {
+    constructor(nombre, precio, id, cantidad) {
+        this.nombre = nombre;
+        this.precio = precio;
+        this.id = id;
+        this.cantidad = cantidad;
+    }
 }
-let SiNo = " ";
-let precio = 0;
-let cantidadDeProductos = 0;
-let producto = " ";
-while (SiNo.toUpperCase() != "SI"){
-let numeroDeProducto =parseInt(prompt("seleccione el numero de un producto \n 1-Calcos fantasia \n 2-Calcos personalizadas \n 3-Calcos para motos \n 4-Calcos para baterias \n 5-Calcos para lanchas \n 6-Bolso porta celular \n 7-Bolso bajo asiento \n 8-Cubre vaina \n 9-Pines para rayos \n 10-Protectores anti ralladura \n 11-Fundas fantasia \n 12-Fundas mtb"));
-if(numeroDeProducto > 12){
+let CalcosFantasia = new Producto("Calcos Fantacia",150,1,0);
+let CalcosPersonalizadas = new Producto("Calcos Personalizadas",200,2,0);
+let CalcosParaMotos = new Producto("Calcos Para Motos",140,3,0);
+let CalcosParaBaterias = new Producto("Calcos Para Baterias",130,4,0);
+let CalcosParaLanchas = new Producto("Calcos Para Lanchas",10450,5,0);
+let BolsosPortaCelular = new Producto("Bolsos Porta Celular",660,6,0);
+let BolsoBajoAsiento = new Producto("Bolso Bajo Asiento",550,7,0);
+let CubreVaina = new Producto("Cubre Vaina",250,8,0);
+let PinesParaRayos = new Producto("Pines Para Rayos",280,9,0);
+let ProtectoresAntiRalladura = new Producto("Protectores Anti Ralladura",300,10,0);
+let FundasFantasia = new Producto("Fundas Fantasia",280,11,0);
+let FundasMtb = new Producto("Fundas Mtb",650,12,0);
+const Productos = [CalcosFantasia,CalcosPersonalizadas,CalcosParaMotos,CalcosParaBaterias,CalcosParaLanchas,BolsosPortaCelular,BolsoBajoAsiento,CubreVaina,PinesParaRayos,ProtectoresAntiRalladura,FundasFantasia,FundasMtb];
+let Carrito = []
+const mostrarProductos = (array) => {
+        let texto = "Seleccione el Numero de un producto \n";
+        let orden = 0
+        array.forEach((element) => {
+            orden = orden + 1;
+            texto += `${orden} ${element.nombre} ${element.precio} \n`;
+        })
+        let NumeroProducto = parseInt(prompt(texto));
+        return NumeroProducto
+    };
+let Numero = 0
+let SiNo = "";
 do {
-    numeroDeProducto =parseInt(prompt("seleccione el numero de un producto correctamente porfavor \n 1-Calcos fantasia \n 2-Calcos personalizadas \n 3-Calcos para motos \n 4-Calcos para baterias \n 5-Calcos para lanchas \n 6-Bolsos porta celular \n 7-Bolso bajo asiento \n 8-Cubre vaina \n 9-Pines para rayos \n 10-Protectores anti ralladura \n 11-Fundas fantasia \n 12-Fundas mtb"));
-} while (numeroDeProducto > 12);
-}
-switch (numeroDeProducto) {
+    Numero = mostrarProductos(Productos);
+    while (Numero > 12 || Numero <= 0) {
+        Numero = mostrarProductos(Productos);
+    }
+    switch (Numero) {
     case 1:
-        productos( "Calcos fantasia" , 150);
-    break
+        alert(`Usted selecciono ${CalcosFantasia.nombre} con un precio por unidad de ${CalcosFantasia.precio}`);
+        CalcosFantasia.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(CalcosFantasia);
+    break;
     case 2:
-        productos( "Calcos personalizadas" , 200);
+        alert(`Usted selecciono ${CalcosPersonalizadas.nombre} con un precio por unidad de ${CalcosPersonalizadas.precio}`);
+        CalcosPersonalizadas.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(CalcosPersonalizadas);
     break;
     case 3:
-        productos( "Calcos para motos" , 140);
+        alert(`Usted selecciono ${CalcosParaMotos.nombre} con un precio por unidad de ${CalcosParaMotos.precio}`);
+        CalcosParaMotos.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(CalcosParaMotos);
     break;
     case 4:
-        productos( "Calcos para baterias" , 130);
+        alert(`Usted selecciono ${CalcosParaBaterias.nombre} con un precio por unidad de ${CalcosParaBaterias.precio}`);
+        CalcosParaBaterias.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(CalcosParaBaterias);
     break;
     case 5:
-        productos( "Calcos para lanchas" , 10450);
+        alert(`Usted selecciono ${CalcosParaLanchas.nombre} con un precio por unidad de ${CalcosParaLanchas.precio}`);
+        CalcosParaLanchas.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(CalcosParaLanchas);
     break;
     case 6:
-        productos( "Bolsos porta celular" , 660);
+        alert(`Usted selecciono ${BolsosPortaCelular.nombre} con un precio por unidad de ${BolsosPortaCelular.precio}`);
+        BolsosPortaCelular.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(BolsosPortaCelular);
     break;
     case 7:
-        productos( "Bolso bajo asiento" , 550);
+        alert(`Usted selecciono ${BolsoBajoAsiento.nombre} con un precio por unidad de ${BolsoBajoAsiento.precio}`);
+        BolsoBajoAsiento.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(BolsoBajoAsiento);
     break;
     case 8:
-        productos( "Cubre vaina" , 250);
+        alert(`Usted selecciono ${CubreVaina.nombre} con un precio por unidad de ${CubreVaina.precio}`);
+        CubreVaina.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(CubreVaina);
     break;
     case 9:
-        productos( "Pines para rayos" , 280);
+        alert(`Usted selecciono ${PinesParaRayos.nombre} con un precio por unidad de ${PinesParaRayos.precio}`);
+        PinesParaRayos.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(PinesParaRayos);
     break;
     case 10:
-        productos( "Protectores anti ralladura" , 300);
+        alert(`Usted selecciono ${ProtectoresAntiRalladura.nombre} con un precio por unidad de ${ProtectoresAntiRalladura.precio}`);
+        ProtectoresAntiRalladura.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(ProtectoresAntiRalladura);
     break;
     case 11:
-        productos( "Fundas fantasia" , 280);
+        alert(`Usted selecciono ${FundasFantasia.nombre} con un precio por unidad de ${FundasFantasia.precio}`);
+        FundasFantasia.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(FundasFantasia);
     break;
     case 12:
-        productos( "Fundas mtb" , 650);
+        alert(`Usted selecciono ${FundasMtb.nombre} con un precio por unidad de ${FundasMtb.precio}`);
+        FundasMtb.cantidad = parseInt(prompt("Porfavor ingrese la cantidad del producto que desea"));
+        Carrito.push(FundasMtb);
     break;
 }
-SiNo = prompt("Es correcta esta compra de " + cantidadDeProductos + " " + producto + " por " + precio + " (responda porfavor con un si o no)");
-}
-alert("Su compra de " + cantidadDeProductos + " " + producto + " por " + precio + " pesos a sido confirmada \n Su pedido llegara a su casa en 15 dias");
+    SiNo = prompt("quiere otro producto? (responda con un si o no)");
+} while (SiNo.toUpperCase() == "SI");
+    let texto = "Su compre es: \n";
+    let orden = 0;
+    let precioCompra = 0
+Carrito.forEach(element => {
+    let PrecioProductoTotal = element.precio * element.cantidad;
+    texto += `${element.cantidad} ${element.nombre} = ${PrecioProductoTotal} \n`;
+    precioCompra = precioCompra + PrecioProductoTotal;
+});
+alert(`${texto}El precio total de se compra es de ${precioCompra}`);
+alert("Su pedido llegara a su casa en 15 dias")
