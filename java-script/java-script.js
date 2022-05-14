@@ -110,4 +110,8 @@ Carrito.forEach(element => {
     precioCompra = precioCompra + PrecioProductoTotal;
 });
 alert(`${texto}El precio total de se compra es de ${precioCompra}`);
-alert("Su pedido llegara a su casa en 15 dias")
+let nombre = prompt ("ingrese su nombre");
+let ubicacion = prompt ("ingrese la ubicacion de su casa porfavot");
+let telefono = prompt ("para poder contactarlo");
+let gmail = prompt ("ingrese su gmail");
+alert(`Gracias ${nombre} por el pedido, este llegara a su casa de 10-15 dias `)
