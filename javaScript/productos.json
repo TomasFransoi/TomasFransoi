@@ -1,0 +1,14 @@
+[
+    {"nombre": "Calcos Fantacia" ,"precio": 150,"id": 1,"cantidad":"1"},
+    {"nombre": "Calcos Personalizadas" ,"precio": 200,"id": 2,"cantidad":"1"},
+    {"nombre": "Calcos Para Motos" ,"precio": 140,"id": 3,"cantidad":"1"},
+    {"nombre": "Calcos Para Baterias" ,"precio": 130,"id": 4,"cantidad":"1"},
+    {"nombre": "Calcos Para Lanchas" ,"precio": 10450,"id": 5,"cantidad":"1"},
+    {"nombre": "Bolsos Porta Celular" ,"precio": 660,"id": 6,"cantidad":"1"},
+    {"nombre": "Bolso Bajo Asiento" ,"precio": 550,"id": 7,"cantidad":"1"},
+    {"nombre": "Cubre Vaina" ,"precio": 250,"id": 8,"cantidad":"1"},
+    {"nombre": "Pines Para Rayos" ,"precio": 280,"id": 9,"cantidad":"1"},
+    {"nombre": "Protectores Anti Ralladura" ,"precio": 300,"id": 10,"cantidad":"1"},
+    {"nombre": "Fundas Fantasia" ,"precio": 280,"id": 11,"cantidad":"1"},
+    {"nombre": "Fundas Mtb" ,"precio": 650,"id": 12,"cantidad":"1"}
+]
