@@ -187,7 +187,9 @@ h3 {
     grid-area: g; }
   .QuienesSomos .QuienesSomos5 {
     grid-area: h; }
-
+p{
+  margin: 0cm;
+}
 /* tablet en horizontal */
 @media only screen and (max-width: 1400px) {
   .QuienesSomos {
