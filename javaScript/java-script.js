@@ -36,8 +36,9 @@ const precioTotalCalculator = (array) => {
     array.forEach(element => {
         precioTotal = precioTotal + element.precio * element.cantidad;
     });
+    return (precioTotal);
 }
-const restarFunction = (producto, boton) => {
+const restarFunction = (producto, boton, div, array) => {
     boton.onclick = () => {
         if (producto.cantidad == 0) {
             Toastify({
@@ -52,19 +53,20 @@ const restarFunction = (producto, boton) => {
         } else {
             producto.cantidad--;
             div.innerHTML = `<h3>${producto.nombre}</h3> <p> el precio por unidad del producto es ${producto.precio} </p><p> la cantidad seleccionada es de ${producto.cantidad}</p><p> el precio es de ${producto.cantidad*producto.precio}</p>`;
+
         }
-        guardarEnLocal("carrito", carrito);
-        precioTotalCalculator(carrito);
+        guardarEnLocal("carrito", array);
+        precioTotal = precioTotalCalculator(array);
         precioTotalDiv.innerHTML = `<p>El precio total de su compra es de ${precioTotal}</p>`;
         main.appendChild(precioTotalDiv);
     }
 }
-const sumarFunction = (producto, boton) => {
+const sumarFunction = (producto, boton, div, array) => {
     boton.onclick = () => {
         producto.cantidad++;
         div.innerHTML = `<h3>${producto.nombre}</h3> <p> el precio por unidad del producto es ${producto.precio} </p><p> la cantidad seleccionada es de ${producto.cantidad}</p><p> el precio es de ${producto.cantidad*producto.precio}</p>`;
-        guardarEnLocal("carrito", carrito);
-        precioTotalCalculator(carrito);
+        guardarEnLocal("carrito", array);
+        precioTotal = precioTotalCalculator(array);
         precioTotalDiv.innerHTML = `<p>El precio total de su compra es de ${precioTotal}</p>`;
         main.appendChild(precioTotalDiv);
     }
@@ -73,49 +75,63 @@ const apregarProductos = (arrayBotones, arrayProductos, arrayData) => {
     let sumarRestar = 15;
     for (const boton of arrayBotones) {
         boton.onclick = (e) => {
-
             const productoSeleccionado = arrayData.find((item) => item.id == e.target.id);
             arrayProductos[e.target.id - 1].remove();
-            console.log(productoSeleccionado);
-            carrito.push(productoSeleccionado);
-            guardarEnLocal("carrito", carrito);
-            let div = document.createElement(`div`);
-            div.innerHTML = `<h3>${productoSeleccionado.nombre}</h3> <p> el precio por unidad del producto es ${productoSeleccionado.precio} </p><p> la cantidad seleccionada es de ${productoSeleccionado.cantidad}</p><p> el precio es de ${productoSeleccionado.cantidad*productoSeleccionado.precio}</p>`;
-            sectionCarrito.appendChild(div);
-            let botonSumRes = document.createElement(`div`);
-            botonSumRes.innerHTML = `<button type="button" id=${sumarRestar} >Mas 1</button><button type="button" id=${sumarRestar + 1} >menos 1</button>`;
-            precioTotalCalculator(carrito);
-
-            precioTotalDiv.innerHTML = `<p>El precio total de su compra es de ${precioTotal}</p>`;
-            main.appendChild(precioTotalDiv);
-            sectionCarrito.appendChild(botonSumRes);
-            const sumar = document.getElementById(`${sumarRestar}`);
-            const restar = document.getElementById(`${sumarRestar + 1}`);
-            // boton para aumentar cantidad del producto seleccionado
-            sumarFunction(productoSeleccionado, sumar);
-            // boton para disminuir cantidad del producto seleccionado
-            restarFunction(productoSeleccionado, restar);
-            sumarRestar = sumarRestar + 2;
-            Toastify({
-                text: "Producto agregado",
-                className: "info",
-                duration: 1000,
-                stopOnFocus: true,
-                position: "right",
-                gravity: "top",
-                newWindow: true,
-            }).showToast();
+            let trueFalse = false
+            carrito.forEach(element => {
+                if (element.id == e.target.id){
+                    trueFalse = true
+                }else{}
+            });
+            if (trueFalse == true) {
+                Toastify({
+                    text: "este producto ya esta en el carrito",
+                    className: "info",
+                    duration: 1000,
+                    stopOnFocus: true,
+                    position: "right",
+                    gravity: "top",
+                    newWindow: true,
+                }).showToast();
+            } else {
+                carrito.push(productoSeleccionado);
+                guardarEnLocal("carrito", carrito);
+                let div = document.createElement(`div`);
+                div.innerHTML = `<h3>${productoSeleccionado.nombre}</h3> <p> el precio por unidad del producto es ${productoSeleccionado.precio} </p><p> la cantidad seleccionada es de ${productoSeleccionado.cantidad}</p><p> el precio es de ${productoSeleccionado.cantidad*productoSeleccionado.precio}</p>`;
+                sectionCarrito.appendChild(div);
+                let botonSumRes = document.createElement(`div`);
+                botonSumRes.innerHTML = `<button type="button" id=${sumarRestar} >Mas 1</button><button type="button" id=${sumarRestar + 1} >menos 1</button>`;
+                precioTotal = precioTotalCalculator(carrito);
+                precioTotalDiv.innerHTML = `<p>El precio total de su compra es de ${precioTotal}</p>`;
+                main.appendChild(precioTotalDiv);
+                sectionCarrito.appendChild(botonSumRes);
+                const sumar = document.getElementById(`${sumarRestar}`);
+                const restar = document.getElementById(`${sumarRestar + 1}`);
+                // boton para aumentar cantidad del producto seleccionado
+                sumarFunction(productoSeleccionado, sumar, div, carrito);
+                // boton para disminuir cantidad del producto seleccionado
+                restarFunction(productoSeleccionado, restar, div, carrito);
+                sumarRestar = sumarRestar + 2;
+                Toastify({
+                    text: "Producto agregado",
+                    className: "info",
+                    duration: 1000,
+                    stopOnFocus: true,
+                    position: "right",
+                    gravity: "top",
+                    newWindow: true,
+                }).showToast();
+            }
         }
     }
 }
-
-//extracion de obtencion de productos de api local
+//obtencion de productos de api local
 fetch('../javaScript/productos.json')
     .then(resp => {
         return resp.json();
     })
     .then(data => {
-        precioTotalCalculator(carrito);
+        precioTotal = precioTotalCalculator(carrito);
         precioTotalDiv.innerHTML = `<p>El precio total de su compra es de ${precioTotal}</p>`;
         //render de productos
         main.appendChild(precioTotalDiv);
@@ -148,6 +164,7 @@ fetch('../javaScript/productos.json')
                 let divs = document.querySelectorAll("#sectionCarrito div");
                 localStorage.removeItem("carrito");
                 carrito.splice(0);
+                precioTotal = precioTotalCalculator(carrito);
                 precioTotalDiv.innerHTML = `<p>El precio total de su compra es de ${precioTotal}</p>`;
                 main.appendChild(precioTotalDiv);
                 const productosDivs = document.querySelectorAll("#sectionProductos div");
@@ -159,7 +176,6 @@ fetch('../javaScript/productos.json')
                 const productosDivs2 = document.querySelectorAll("#sectionProductos div");
                 apregarProductos(botonesAgregar, productosDivs2, data);
             })
-
         }
         //boton para comprar el carrito
         botonComprar.onclick = () => {
@@ -182,6 +198,7 @@ fetch('../javaScript/productos.json')
                 });
                 localStorage.removeItem("carrito");
                 carrito.splice(0);
+                precioTotal = precioTotalCalculator(carrito);
                 precioTotalDiv.innerHTML = `<p>El precio total de su compra es de ${precioTotal}</p>`
                 //elimino y rendereo de vuelta los productos
                 const productosDivs = document.querySelectorAll("#sectionProductos div");
@@ -193,28 +210,25 @@ fetch('../javaScript/productos.json')
                 const productosDivs2 = document.querySelectorAll("#sectionProductos div");
                 apregarProductos(botonesAgregar, productosDivs2, data);
             }
-
         }
     });
-// obtencion y render de datos del carrito desde el almacenamiento local
+//render de datos del carrito desde el almacenamiento local
 let sumarRestar = 15;
 for (let index = 0; index < carrito.length; index++) {
-    const carrito = obtenerValor("carrito");
     let div = document.createElement(`div`);
     div.innerHTML = `<h3>${carrito[index].nombre}</h3> <p> el precio por unidad del producto es ${carrito[index].precio} </p><p> la cantidad seleccionada es de ${carrito[index].cantidad}</p><p> la precio total de esta seleccion es de ${carrito[index].cantidad*carrito[index].precio}</p>`;
     sectionCarrito.appendChild(div);
     let botonSumRes = document.createElement(`div`);
     botonSumRes.innerHTML = `<button type="button" id=${sumarRestar} >Mas 1</button><button type="button" id=${sumarRestar + 1} >menos 1</button>`;
-    precioTotalCalculator(carrito);
+    precioTotal = precioTotalCalculator(carrito);
     precioTotalDiv.innerHTML = `<p>El precio total de su compra es de ${precioTotal}</p>`
     main.appendChild(precioTotalDiv);
     sectionCarrito.appendChild(botonSumRes);
     const sumar = document.getElementById(`${sumarRestar}`);
     const restar = document.getElementById(`${sumarRestar + 1}`);
     //boton para aumentar cantidad de producto
-    sumarFunction(carrito[index], sumar);
+    sumarFunction(carrito[index], sumar, div, carrito);
     //boton para disminuir cantidad de producto
-    restarFunction(carrito[index], restar);
-
+    restarFunction(carrito[index], restar, div, carrito);
     sumarRestar = sumarRestar + 2;
 }
